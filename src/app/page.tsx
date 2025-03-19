@@ -1,7 +1,10 @@
 import React from "react";
 import Head from "next/head";
 import Image from 'next/image';
-import HexagonImage from "./components/Hexagon";
+import ServicesCard from "./components/ServicesCard";
+import ServicesList from "./components/ServicesList";
+import PartnessList from "./components/PartnessList";
+import { partnessList, servicesCard, servicesList } from "./constants/clientData";
 
 export default function Home() {
 
@@ -121,37 +124,9 @@ export default function Home() {
       <section className="services-section">
         <h2>Nossos Serviços</h2>
         <div className="services-container">
-
-          <div className="service-card">
-            <Image src="/images/coifaMetalica.png" alt="Estruturas Metálicas" width={400} height={220} />
-            <h3>Estruturas Metálicas</h3>
-          </div>
-
-          <div className="service-card">
-            <Image src="/images/exagonos-img.png" alt="Calhas e Rufos" width={400} height={220} />
-            <h3>Calhas e Rufos</h3>
-          </div>
-
-          <div className="service-card">
-            <Image src="/images/drywall.png" alt="Drywall Antichamas" width={400} height={220} />
-            <h3>Drywall Antichamas</h3>
-          </div>
-
-          <div className="service-card">
-            <Image src="/images/exaustores.png" alt="Tubulações / Exaustores" width={400} height={220} />
-            <h3>Tubulações / Exaustores</h3>
-          </div>
-
-          <div className="service-card">
-            <Image src="/images/telhasecalhas.png" alt="Telhas e Calhas" width={400} height={220} />
-            <h3>Telhas e Calhas</h3>
-          </div>
-
-          <div className="service-card">
-            <Image src="/images/servicoscalhas.png" alt="Isolamentos Térmicos" width={400} height={220} />
-            <h3>Isolamentos Térmicos</h3>
-          </div>
-
+          {servicesCard.map((service) =>
+            <ServicesCard key={service.label} label={service.label} link={service.link} />
+          )}
         </div>
       </section>
 
@@ -159,114 +134,19 @@ export default function Home() {
       <section className="services-checklist">
         <div className="background-circle">
           <h2>Calhas Franco atua na execução de obras nos mais diversos seguimentos do mercado.</h2>
+
           <ul>
-            <li>
-              <div className="mb-4 mb-md-0">
-                <Image src="/images/success-green-check-mark-icon.svg" alt="" width={30} height={30} />
-              </div>
-              <span className="check"></span> Instalação e manutenção de Calhas e Rufos / Industriais e Residenciais
-            </li>
-            <li>
-              <div className="mb-4 mb-md-0">
-                <Image src="/images/success-green-check-mark-icon.svg" alt="" width={30} height={30} />
-              </div>
-              <span className="check"></span> Tubulações, Coifas e Condutores
-            </li>
-            <li>
-              <div className="mb-4 mb-md-0">
-                <Image src="/images/success-green-check-mark-icon.svg" alt="" width={30} height={30} />
-              </div>
-              <span className="check"></span> Instalação de Sistemas de Exaustão
-            </li>
-            <li>
-              <div className="mb-4 mb-md-0">
-                <Image src="/images/success-green-check-mark-icon.svg" alt="" width={30} height={30} />
-              </div>
-              <span className="check"></span> Estruturas Metálicas
-            </li>
-            <li>
-              <div className="mb-4 mb-md-0">
-                <Image src="/images/success-green-check-mark-icon.svg" alt="" width={30} height={30} />
-              </div>
-              <span className="check"></span> Instalação de Drywall / Placas Divisórias
-            </li>
-            <li>
-              <div className="mb-4 mb-md-0">
-                <Image src="/images/success-green-check-mark-icon.svg" alt="" width={30} height={30} />
-              </div>
-              <span className="check"></span> Manutenção Civil / Projetos
-            </li>
-            <li>
-              <div className="mb-4 mb-md-0">
-                <Image src="/images/success-green-check-mark-icon.svg" alt="" width={30} height={30} />
-              </div>
-              <span className="check"></span> Isolamentos Térmicos / Quente / Frio
-            </li>
-            <li>
-              <div className="mb-4 mb-md-0">
-                <Image src="/images/success-green-check-mark-icon.svg" alt="" width={30} height={30} />
-              </div>
-              <span className="check"></span> Impermeabilização de Lajes / Telhados
-            </li>
-            <li>
-              <div className="mb-4 mb-md-0">
-                <Image src="/images/success-green-check-mark-icon.svg" alt="" width={30} height={30} />
-              </div>
-              <span className="check"></span> Laudos Técnicos Cautelar / Industrial / Residencial
-            </li>
-            <li>
-              <div className="mb-4 mb-md-0">
-                <Image src="/images/success-green-check-mark-icon.svg" alt="" width={30} height={30} />
-              </div>
-              <span className="check"></span> Troca de Telhados e Manutenções Gerais
-            </li>
+            {servicesList.map((service) =>
+              <ServicesList key={service.label} label={service.label} />
+            )}
           </ul>
         </div>
 
         {/*Partness*/}
       </section><section className="p-8 text-center hexagon-section">
-        <div className="hexagon">
-          <HexagonImage src="/images/comp1.png" alt="" />
-        </div>
-        <div className="hexagon">
-          <HexagonImage src="/images/comp2.png" alt="" />
-        </div>
-        <div className="hexagon">
-          <HexagonImage src="/images/comp3.png" alt="" />
-        </div>
-        <div className="hexagon">
-          <HexagonImage src="/images/comp4.png" alt="" />
-        </div>
-        <div className="hexagon">
-          <HexagonImage src="/images/comp5.png" alt="" />
-        </div>
-        <div className="hexagon">
-          <HexagonImage src="/images/comp6.png" alt="" />
-        </div>
-        <div className="hexagon">
-          <HexagonImage src="/images/comp7.png" alt="" />
-        </div>
-        <div className="hexagon">
-          <HexagonImage src="/images/comp8.png" alt="" />
-        </div>
-        <div className="hexagon">
-          <HexagonImage src="/images/comp9.png" alt="" />
-        </div>
-        <div className="hexagon">
-          <HexagonImage src="/images/comp10.png" alt="" />
-        </div>
-        <div className="hexagon">
-          <HexagonImage src="/images/comp11.png" alt="" />
-        </div>
-        <div className="hexagon">
-          <HexagonImage src="/images/comp12.png" alt="" />
-        </div>
-        <div className="hexagon">
-          <HexagonImage src="/images/comp13.png" alt="" />
-        </div>
-        <div className="hexagon">
-          <HexagonImage src="/images/comp14.png" alt="" />
-        </div>
+        {partnessList.map((partness) =>
+          <PartnessList key={partness.img} img={partness.img} />
+        )}
       </section>
 
 
