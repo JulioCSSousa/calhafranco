@@ -1,0 +1,34 @@
+/* Reset básico não é necessário, pois Tailwind já cuida disso */
+@use '../scss/styles.scss';
+/* Estilos gerais */
+header {
+  display: flex;
+  background-image: url("/images/backgound-mosaico.jpeg");
+  text-align: left;
+  padding: 2rem 1rem;
+
+}
+
+header h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+/* Rodapé */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}

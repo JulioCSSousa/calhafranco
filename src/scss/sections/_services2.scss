@@ -1,0 +1,42 @@
+.services-checklist {
+    background-color: #333;
+    color: #fff;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    margin: 0 auto;
+    text-align: center;
+  
+    h2 {
+      font-size: 1.8rem;
+      color: #f1c40f;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+  
+    ul {
+      list-style: none;
+      
+  
+      li {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+
+  
+        .check {
+          display: inline-block;
+          width: 28px;
+          height: 28px;
+          margin-right: 1rem;
+          background-color: #f1c40f;
+          mask: url('/images/check-icon.svg') no-repeat center;
+          -webkit-mask: url('/images/check-icon.svg') no-repeat center;
+          mask-size: contain;
+          -webkit-mask-size: contain;
+        }
+      }
+    }
+  }
+  
