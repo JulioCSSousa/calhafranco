@@ -1,7 +1,12 @@
 import Image from "next/image";
 import "./Hexagon.scss";
 
-export default function HexagonImage({ src, alt }) {
+interface HexagonImageProps {
+  src: string;
+  alt: string;
+}
+
+export default function HexagonImage({ src, alt }: HexagonImageProps) {
   return (
     <div className="hexagon">
       <Image src={src} alt={alt} layout="fill" objectFit="cover" />

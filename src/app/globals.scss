@@ -1,9 +1,9 @@
 /* Reset básico não é necessário, pois Tailwind já cuida disso */
 @use '../scss/styles.scss';
+
 /* Estilos gerais */
 header {
   display: flex;
-  background-image: url("/images/backgound-mosaico.jpeg");
   text-align: left;
   padding: 2rem 1rem;
 

@@ -9,7 +9,11 @@ export default function Home() {
     <div>
       <Head>
         <title>Calhas Franco - Qualidade e Segurança</title>
-        <meta name="description" content="Empresa especializada em serviços industriais e residenciais." />
+        <title>Calhas Franco - Estruturas Metálicas e Serviços</title>
+        <meta name="description" content="Especialistas em calhas, rufos, estruturas metálicas, drywall antichamas, telhados e isolamento térmico." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.calhasfranco.com.br/" />
       </Head>
 
       <header className="py-4 text-white" style={{ background: 'linear-gradient(to right, #004e92, #000428)' }}>
@@ -69,7 +73,7 @@ export default function Home() {
                 </a>
               </li>
               <li className="nav-item d-flex align-items-center">
-                <a className="nav-link d-flex align-items-center" href="https://wa.me/SEUNUMERO" target="_blank">
+                <a className="nav-link d-flex align-items-center" href="" target="_blank">
                   <Image
                     src="/images/whatsapp-svgrepo-com.svg"
                     alt="WhatsApp"
@@ -219,7 +223,7 @@ export default function Home() {
           </ul>
         </div>
 
-      {/*Partness*/}
+        {/*Partness*/}
       </section><section className="p-8 text-center hexagon-section">
         <div className="hexagon">
           <HexagonImage src="/images/comp1.png" alt="" />
@@ -265,7 +269,7 @@ export default function Home() {
         </div>
       </section>
 
-      
+
       <section className="p-8 text-center">
         <h2 className="text-3xl font-bold">Contato</h2>
         <p className="mt-4">Entre em contato conosco:</p>

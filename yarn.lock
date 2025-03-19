@@ -245,6 +245,11 @@
     "@emnapi/runtime" "^1.3.1"
     "@tybys/wasm-util" "^0.9.0"
 
+"@netlify/next@^1.4.9":
+  version "1.4.9"
+  resolved "https://registry.npmjs.org/@netlify/next/-/next-1.4.9.tgz"
+  integrity sha512-lrbY+CEhS9x0jV7oXVYi/rqxZ6ht5KeLGNZsgIPI34kpDaBuD/EfsyKa28BWeSrFalxRZmkMxQYRSTa82v3roQ==
+
 "@next/env@15.2.2":
   version "15.2.2"
   resolved "https://registry.npmjs.org/@next/env/-/env-15.2.2.tgz"
@@ -878,7 +883,7 @@ balanced-match@^1.0.0:
 
 bootstrap@^5.3.3:
   version "5.3.3"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.3.3.tgz#de35e1a765c897ac940021900fcbb831602bac38"
+  resolved "https://registry.npmjs.org/bootstrap/-/bootstrap-5.3.3.tgz"
   integrity sha512-8HLCdWgyoMguSO9o+aH+iuZ+aht+mzW0u3HIMzVu7Srrpv7EBBxTnrFlSCskwdY1+EOFQSm7uMJhNQHkdPcmjg==
 
 brace-expansion@^1.1.7:
@@ -2544,7 +2549,7 @@ safe-regex-test@^1.0.3, safe-regex-test@^1.1.0:
 
 sass@^1.86.0:
   version "1.86.0"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.86.0.tgz#f49464fb6237a903a93f4e8760ef6e37a5030114"
+  resolved "https://registry.npmjs.org/sass/-/sass-1.86.0.tgz"
   integrity sha512-zV8vGUld/+mP4KbMLJMX7TyGCuUp7hnkOScgCMsWuHtns8CWBoz+vmEhoGMXsaJrbUP8gj+F1dLvVe79sK8UdA==
   dependencies:
     chokidar "^4.0.0"
