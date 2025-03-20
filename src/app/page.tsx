@@ -5,7 +5,7 @@ import ServicesCard from "./components/ServicesCard";
 import ServicesList from "./components/ServicesList";
 import PartnessList from "./components/PartnessList";
 import { partnessList, servicesCard, servicesList } from "./constants/clientData";
-import MenuButton from "./components/MenuButton";
+import Script from 'next/script';
 
 export default function Home() {
 
@@ -48,9 +48,10 @@ export default function Home() {
       {/* Navbar */}
       <nav id="mainNav" className="navbar navbar-expand-lg d-flex">
         <div className="container-fluid justify-content-between align-items-center">
-
-          <MenuButton />
-
+          <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" />
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon" style={{ filter: 'invert(1)' }}></span>
+            </button>
           <div id="navbarResponsive" className="collapse navbar-collapse">
             <ul className="navbar-nav d-flex align-items-center gap-4">
               <li className="nav-item">
