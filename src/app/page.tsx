@@ -19,7 +19,6 @@ export default function Home() {
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.calhasfranco.com.br/" />
       </Head>
-      <MenuButton/>
       <header className="py-4 text-white" style={{ background: 'linear-gradient(to right, #004e92, #000428)' }}>
         <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between">
           {/* Logo */}
