@@ -19,7 +19,6 @@ export default function Home() {
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.calhasfranco.com.br/" />
       </Head>
-
       <header className="py-4 text-white" style={{ background: 'linear-gradient(to right, #004e92, #000428)' }}>
         <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between">
           {/* Logo */}
@@ -56,16 +55,16 @@ export default function Home() {
           <div id="navbarResponsive" className="collapse navbar-collapse">
             <ul className="navbar-nav d-flex align-items-center gap-4">
               <li className="nav-item">
-                <a className="nav-link" href="#about">👨‍💼 Quem somos</a>
+                <a className="nav-link" href="#quem-somos">👨‍💼 Quem somos</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#services">🛠️ Serviços</a>
+                <a className="nav-link" href="#servicos">🛠️ Serviços</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#projects">🏗️ Projetos</a>
+                <a className="nav-link" href="#projetos">🏗️ Projetos</a>
               </li>
               <li className="nav-item d-flex align-items-center">
-                <a className="nav-link d-flex align-items-center" href="https://wa.me/SEUNUMERO" target="_blank">
+                <a className="nav-link d-flex align-items-center" href="https://www.instagram.com" target="_blank">
                   <Image
                     src="/images/instagram-1-svgrepo-com.svg"
                     alt="WhatsApp"
@@ -76,7 +75,7 @@ export default function Home() {
                 </a>
               </li>
               <li className="nav-item d-flex align-items-center">
-                <a className="nav-link d-flex align-items-center" href="" target="_blank">
+                <a className="nav-link d-flex align-items-center" href="https://wa.me/5519997259533" target="_blank">
                   <Image
                     src="/images/whatsapp-svgrepo-com.svg"
                     alt="WhatsApp"
@@ -100,7 +99,7 @@ export default function Home() {
       </div>
 
       {/* About-Us */}
-      <section className="about-section">
+      <section id='quem-somos' className="about-section">
         <div className="top-stripe"></div>
 
         <div className="about-content">
@@ -121,7 +120,7 @@ export default function Home() {
       </section>
 
       {/*Services*/}
-      <section className="services-section">
+      <section id="servicos" className="services-section">
         <h2>Nossos Serviços</h2>
         <div className="services-container">
           {servicesCard.map((service) =>
@@ -131,7 +130,7 @@ export default function Home() {
       </section>
 
       {/*Services2*/}
-      <section className="services-checklist">
+      <section id="projetos" className="services-checklist">
         <div className="background-circle">
           <h2>Calhas Franco atua na execução de obras nos mais diversos seguimentos do mercado.</h2>
 
