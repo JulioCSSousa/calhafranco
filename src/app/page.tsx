@@ -32,7 +32,7 @@ export default function Home() {
               <li className="mb-2">
                 <div className="d-flex align-items-center">
                   <Image src="/images/geo-fence-svgrepo-com.svg" alt="Geo" width={30} height={30} />
-                  <p className="mb-0 ms-2">Rua das Acácias, 123 - Centro, São Paulo - SP</p>
+                  <p className="mb-0 ms-2">Rua Ferrúcio Augusto Testa, 52, Vila Guilherme - Jaguariúna - SP</p>
                 </div>
               </li>
               <li>
@@ -64,7 +64,7 @@ export default function Home() {
                 <a className="nav-link" href="#projetos">🏗️ Projetos</a>
               </li>
               <li className="nav-item d-flex align-items-center">
-                <a className="nav-link d-flex align-items-center" href="https://www.instagram.com" target="_blank">
+                <a className="nav-link d-flex align-items-center" href="https://www.instagram.com/calhas_franco" target="_blank">
                   <Image
                     src="/images/instagram-1-svgrepo-com.svg"
                     alt="WhatsApp"
@@ -75,7 +75,7 @@ export default function Home() {
                 </a>
               </li>
               <li className="nav-item d-flex align-items-center">
-                <a className="nav-link d-flex align-items-center" href="https://wa.me/5519997259533" target="_blank">
+                <a className="nav-link d-flex align-items-center" href="https://wa.me/5519996379679" target="_blank">
                   <Image
                     src="/images/whatsapp-svgrepo-com.svg"
                     alt="WhatsApp"
@@ -152,7 +152,7 @@ export default function Home() {
       <section className="p-8 text-center">
         <h2 className="text-3xl font-bold">Contato</h2>
         <p className="mt-4">Entre em contato conosco:</p>
-        <p>Email: reformas.franco@outlook.com.br</p>
+        <p>Email: calhasfranco.manutencoes@outlook.com.br</p>
         <p>Telefone: (19) 99637-9679</p>
       </section>
 
