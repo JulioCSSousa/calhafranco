@@ -1,5 +1,5 @@
 /* Reset básico não é necessário, pois Tailwind já cuida disso */
-@use '../scss/styles.scss';
+@use '../scss/styles.scss' as *;
 
 /* Estilos gerais */
 header {

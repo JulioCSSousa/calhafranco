@@ -1,6 +1,8 @@
 //
 // Portfolio
 //
+@use "../variables/index.scss" as *;
+@use "sass:color";
 
 #projects {
     .container-fluid {
@@ -26,7 +28,7 @@
                 opacity: 0;
 
                 color: $white;
-                background: fade-out($primary, 0.05);
+                background: color.adjust($blue, $alpha: -0.05);
                 transition: opacity 0.25s ease;
                 text-align: center;
 

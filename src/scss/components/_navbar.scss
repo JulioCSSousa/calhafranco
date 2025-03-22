@@ -1,5 +1,7 @@
-#mainNav {
+@use "../variables/index.scss" as *;
 
+
+#mainNav {
     box-shadow: $box-shadow;
     /* Alterando para a cor preta */
     background-color: black;

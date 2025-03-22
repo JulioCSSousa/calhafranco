@@ -1,25 +1,4 @@
+@use "./variables/index.scss" as *;
+@use "./sections/index.scss" as *;
+@use "./components/index.scss" as *;
 
-@import "bootstrap/scss/bootstrap.scss";
-
-// Import custom variables and override default Bootstrap variables
-@import "./variables.scss";
-
-
-// Import custom styles
-@import "./global.scss";
-
-// Components
-@import "./components/buttons.scss";
-@import "./components/dividers.scss";
-@import "./components/navbar.scss";
-@import "./components/icons.scss";
-@import "./components/yellow-circle.scss";
-
-
-// Sections
-@import "./sections/masthead.scss";
-@import "./sections/portfolio.scss";
-@import "./sections/about-us.scss";
-@import "./sections/services.scss";
-@import "./sections/services2.scss";
-@import "./sections/_our-partness.scss";
