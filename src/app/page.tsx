@@ -6,6 +6,7 @@ import ServicesList from "./components/ServicesList";
 import PartnessList from "./components/PartnessList";
 import { partnessList, servicesCard, servicesList } from "./constants/clientData";
 import Script from 'next/script';
+import GoogleReviews from "./components/GoogleViews";
 
 export default function Home() {
 
@@ -51,6 +52,9 @@ export default function Home() {
           ]
         })
       }} />
+
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div className="elfsight-app-28a1cd3c-c90f-479e-b5b0-7d27ab264c9c" data-elfsight-app-lazy></div>
     </Head>
 
       <header className="py-4 text-white" style={{ background: 'linear-gradient(to right, #004e92, #000428)' }}>
@@ -162,7 +166,11 @@ export default function Home() {
           )}
         </div>
       </section>
-
+      <section className="reviewSection">
+        <GoogleReviews />
+        <button className="btn btn-primary" id="reviewBtn"> Ver todos os Comentários</button>
+      </section>
+      
       {/*Services2*/}
       <section id="projetos" className="services-checklist">
         <div className="background-circle">
@@ -180,11 +188,6 @@ export default function Home() {
         {partnessList.map((partness) =>
           <PartnessList key={partness.img} img={partness.img} />
         )}
-      </section>
-
-
-      <section className="p-8 text-center">
-       
       </section>
 
       <footer className="text-white py-4 text-center">
