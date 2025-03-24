@@ -71,7 +71,7 @@ export default function Home() {
               </li>
               <li>
                 <div className="d-flex align-items-center">
-                  <span>🕒 Atendimento: Seg - Sex, 8h às 18h</span>
+                  <span>🕒 Atendimento: Seg - Sex, 7:30 às 17:00</span>
                 </div>
               </li>
             </ul>
