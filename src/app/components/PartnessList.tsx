@@ -6,7 +6,7 @@ interface PartnessListInterface {
 
 export default function PartnessList({ img }: PartnessListInterface) {
   return (
-    <div className="hexagon">
+    <div>
       <HexagonImage src={img} alt={img} />
     </div>
   )
