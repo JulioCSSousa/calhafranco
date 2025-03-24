@@ -12,16 +12,16 @@ interface partnessList {
 }
 
 export const servicesCard: servicesCardInterface[] = [
-  { label: "Estruturas Metálicas", link: "/images/coifaMetalica.png" },
-  { label: "Calhas e Rufos", link: "/images/exagonos-img.png" },
-  { label: "Drywall Antichamas", link: "/images/drywall.png" },
-  { label: "Tubulações / Exaustores", link: "/images/exaustores.png" },
-  { label: "Telhas e Calhas", link: "/images/telhasecalhas.png" },
-  { label: "Isolamentos Térmicos", link: "/images/servicoscalhas.png" },
+  { label: "Instalação de cobertura metálica industrial pela Calhas Franco", link: "/images/coifaMetalica.png" },
+  { label: "Instalação de Calhas Rufos industrial pela Calhas Franco", link: "/images/exagonos-img.png" },
+  { label: "Instalação de Drywall Antichamas industrial pela Calhas Franco", link: "/images/drywall.png" },
+  { label: "Instalação de Tubulações e Exaustores industrial pela Calhas Franco", link: "/images/exaustores.png" },
+  { label: "Instalação de Telhas e Calhas pela Calhas Franco", link: "/images/telhasecalhas.png" },
+  { label: "Instalação de Isolamentos Térmicos pela Calhas Franco", link: "/images/servicoscalhas.png" },
 ]
 
 export const servicesList: servicesListInterface[] = [
-  { label: "Instalação e manutenção de Calhas e Rufos / Industriais e Residenciais" },
+  { label: "Instalação e manutenção de Calhas e  Rufos / Industriais e Residenciais" },
   { label: "Tubulações, Coifas e Condutores" },
   { label: "Instalação de Sistemas de Exaustão" },
   { label: "Estruturas Metálicas" },
