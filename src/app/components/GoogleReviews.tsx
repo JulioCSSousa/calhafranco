@@ -10,25 +10,20 @@ export default function GoogleReviews() {
     }, []);
 
     return (
-        <div style={{ position: 'relative', width: 'fit-content', margin: '0 auto'}}>
+        <div style={{ position: 'relative' }}>
             <div className="elfsight-app-28a1cd3c-c90f-479e-b5b0-7d27ab264c9c" style={{ zIndex: 0 }}></div>
-            <a
-                href="https://g.co/kgs/qgMp9cV"
-                className="btn btn-primary"
-                id="reviewBtn"
+            <div
                 style={{
-                    
                     right: '-20px',
-                    bottom: '10px',
+                    bottom: '8px',
                     position: 'absolute',
-                    width: '220px',
-                    zIndex: 40,
+                    width: '225px',
+                    height: '52px',
+                    backgroundColor: 'white'
+                    
                 }}
-
             >
-                ++ Ver todos os Comentários
-            </a>
-
+            </div>
         </div>
     );
 }
