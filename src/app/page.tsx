@@ -148,10 +148,9 @@ export default function Home() {
         </div>
       </section>
       
-      <section >
-        <div className="reviewSection">
-          <GoogleReviews />
-        </div>
+      <section className="reviewSection">
+        <GoogleReviews />
+        <button className="btn btn-primary" id="reviewBtn"> Ver todos os Comentários</button>
       </section>
 
       <section className="p-8 text-center hexagon-section">
