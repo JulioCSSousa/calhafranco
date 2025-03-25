@@ -7,6 +7,7 @@ import ServicesList from "./components/ServicesList";
 import PartnessList from "./components/PartnessList";
 import { partnessList, servicesCard, servicesList } from "./constants/clientData";
 import MapViewWrapper from "./components/MapViewWrapper";
+import GoogleReviews from "./components/GoogleReviews";
 
 export const metadata: Metadata = {
   title: "Calhas Franco - Instalação de Calhas e Serviços Industriais em Jaguariúna",
@@ -146,6 +147,11 @@ export default function Home() {
           </ul>
         </div>
       </section>
+      
+      <section className="reviewSection">
+        <GoogleReviews />
+        
+      </section>
 
       <section className="p-8 text-center hexagon-section">
         {partnessList.map((partness) =>
@@ -157,8 +163,8 @@ export default function Home() {
         <h2 className="text-center mb-4">Onde estamos</h2>
         <MapViewWrapper />
 
-        <section className="d-flex justify-content-center row" style={{color: '#f1c40f'}}>
-         <div className="text-center">
+        <section className="d-flex justify-content-center row" style={{ color: '#f1c40f' }}>
+          <div className="text-center">
             <Image
               src="/images/favicon.png"
               alt="Logo Calhas Franco"
