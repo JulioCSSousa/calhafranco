@@ -14,12 +14,12 @@ L.Icon.Default.mergeOptions({
 
 export default function MapView() {
   return (
-    <MapContainer center={[-22.6985, -46.9912]} zoom={15} style={{ height: '400px', width: '100%' }}>
+    <MapContainer center={[-22.690348654568854, -46.98988013361328]} zoom={15} style={{ height: '400px', width: '100%' }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution="&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors"
       />
-      <Marker position={[-22.6985, -46.9912]}>
+      <Marker position={[-22.690348654568854, -46.98988013361328  ]}>
         <Popup>
           Calhas Franco<br /> Rua Ferrúcio Augusto Testa, 52
         </Popup>

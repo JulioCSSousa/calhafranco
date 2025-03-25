@@ -24,15 +24,21 @@ export default function Home() {
           {/* Informações */}
           <div className="ms-md-5">
             <ul className="list-unstyled mb-0">
-              <li className="mb-2">
-                <div className="d-flex align-items-center">
+            <li className="mb-2">
+                <a
+                  href="https://maps.app.goo.gl/D5sBVZNGEtYMfkbS8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                  className="d-flex align-items-center"
+                >
                   <Image src="/images/geo-fence-svgrepo-com.svg" alt="Geo" width={30} height={30} />
                   <p className="mb-0 ms-2">Rua Ferrúcio Augusto Testa, 52, Vila Guilherme - Jaguariúna - SP</p>
-                </div>
+                </a>
               </li>
               <li>
                 <div className="d-flex align-items-center">
-                  <span>🕒 Atendimento: Seg - Sex, 7:30 às 17:00</span>
+                  <span>🕒 Atendimento: Seg - Sex, 7:30 às 17:30 Sábado das 8:00 às 12:00</span>
                 </div>
               </li>
             </ul>

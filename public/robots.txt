@@ -1,3 +1,9 @@
+# *
 User-agent: *
 Allow: /
-Sitemap: https://www.calhasfranco.com.br/sitemap.xml
+
+# Host
+Host: https://calhasfranco.com.br
+
+# Sitemaps
+Sitemap: https://calhasfranco.com.br/sitemap.xml
