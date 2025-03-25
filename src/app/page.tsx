@@ -148,9 +148,10 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="reviewSection">
-        <GoogleReviews />
-        
+      <section >
+        <div className="reviewSection">
+          <GoogleReviews />
+        </div>
       </section>
 
       <section className="p-8 text-center hexagon-section">
