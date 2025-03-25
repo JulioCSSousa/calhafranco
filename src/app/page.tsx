@@ -207,13 +207,13 @@ export default function Home() {
               <h5 className="text-uppercase">Acompanhe nossas redes</h5>
               <hr className="border-light w-25 mb-2 mt-1" />
               <div className="d-flex gap-2">
-                <a href="#" className="bg-white text-dark p-2 rounded" aria-label="Facebook">
+                <a href="https://www.facebook.com/people/Calhas-Franco/61563856175010" className="bg-white text-dark p-2 rounded icon-hover" aria-label="Facebook">
                   <i className="bi bi-facebook"></i>
                 </a>
-                <a href="#" className="bg-white text-dark p-2 rounded" aria-label="Google">
+                <a href="https://g.co/kgs/2dHRuFS" className="bg-white text-dark p-2 rounded icon-hover" aria-label="Google">
                   <i className="bi bi-google"></i>
                 </a>
-                <a href="#" className="bg-white text-dark p-2 rounded" aria-label="Instagram">
+                <a href="https://www.instagram.com/calhas_franco" className="bg-white text-dark p-2 rounded icon-hover" aria-label="Instagram icon-hover">
                   <i className="bi bi-instagram"></i>
                 </a>
               </div>

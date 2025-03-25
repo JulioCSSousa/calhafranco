@@ -53,3 +53,14 @@ footer {
   .whatsapp-button:hover {
     transform: scale(1.1);
   }
+
+  .icon-hover {
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .icon-hover:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
