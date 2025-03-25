@@ -32,3 +32,16 @@ footer {
   padding: 1.5rem;
   margin-top: 2rem;
 }
+
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .whatsapp-button:hover {
+    transform: scale(1.1);
+  }

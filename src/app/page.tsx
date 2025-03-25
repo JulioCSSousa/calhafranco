@@ -6,6 +6,7 @@ import ServicesList from "./components/ServicesList";
 import PartnessList from "./components/PartnessList";
 import { partnessList, servicesCard, servicesList } from "./constants/clientData";
 import Script from 'next/script';
+import MapView from "./components/MapView";
 
 export default function Home() {
 
@@ -21,7 +22,7 @@ export default function Home() {
       <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
       <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
       <link rel="manifest" href="/site.webmanifest" />
-
+      
       {/* Dados estruturados para SEO Local */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
@@ -101,11 +102,22 @@ export default function Home() {
                 <a className="nav-link d-flex align-items-center" href="https://www.instagram.com/calhas_franco" target="_blank">
                   <Image
                     src="/images/instagram-1-svgrepo-com.svg"
-                    alt="WhatsApp"
+                    alt="instagram"
                     width={30}
                     height={30}
                   />
                   <span className="ms-2">Instagram</span>
+                </a>
+              </li>
+              <li className="nav-item d-flex align-items-center">
+                <a className="nav-link d-flex align-items-center" href="https://www.facebook.com/people/Calhas-Franco/61563856175010/?rdid=bbk75BgVkT2eo79n&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16Kf55GBd7%2F" target="_blank">
+                  <Image
+                    src="/images/icons8-facebook-novo.svg"
+                    alt="Facebook"
+                    width={30}
+                    height={30}
+                  />
+                  <span className="ms-2">Facebook</span>
                 </a>
               </li>
               <li className="nav-item d-flex align-items-center">
@@ -184,7 +196,12 @@ export default function Home() {
 
 
       <section className="p-8 text-center">
-       
+
+      <section className="map-section">
+        <h2 className="text-center mb-4">Onde estamos</h2>
+        <MapView />
+      </section>
+
       </section>
 
       <footer className="text-white py-4 text-center">
@@ -197,6 +214,21 @@ export default function Home() {
         <p>Telefone: (19) 99637-9679</p>
         <p>&copy; 2025 Calhas Franco - Todos os direitos reservados</p>
       </footer>
+      <a
+      href="https://wa.me/5519996379679"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="whatsapp-button"
+    >
+      <Image
+        src="/images/whatsapp-svgrepo-com.svg"
+        alt="WhatsApp"
+        width={50}
+        height={50}
+      />
+    </a>
+
     </div>
+    
   );
 }
