@@ -34,7 +34,7 @@ export const servicesList: servicesListInterface[] = [
 ]
 
 export const partnessList = [
-  { title: "Vila Guedes",
+  { title: "Condomínio Villa Guedes",
     img: "/images/comp1.png" },
   { title: "Leon Park",
     img: "/images/comp2.png" },
@@ -44,7 +44,7 @@ export const partnessList = [
     img: "/images/comp4.png" },
   { title: "Veilling Holambra",
     img: "/images/comp5.png" },
-  { title: "Tamburi",
+  { title: "Condomínio Tamboré",
     img: "/images/comp6.png" },
   { title: "Condominio Lago da Barra",
     img: "/images/comp7.png" },
