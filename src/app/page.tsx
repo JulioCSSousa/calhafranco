@@ -63,27 +63,7 @@ export default function Home() {
           <div className="mb-4 mb-md-0">
             <Image src="/images/logo-contraste-removebg-preview.png" alt="Logo" width={300} height={150} />
           </div>
-          <div className="ms-md-5">
-            <ul className="list-unstyled mb-0">
-              <li className="mb-2">
-                <a
-                  href="https://maps.app.goo.gl/D5sBVZNGEtYMfkbS8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: 'none', color: 'inherit' }}
-                  className="d-flex align-items-center"
-                >
-                  <Image src="/images/geo-fence-svgrepo-com.svg" alt="Geo" width={30} height={30} />
-                  <p className="mb-0 ms-2">Rua Ferrúcio Augusto Testa, 52, Vila Guilherme - Jaguariúna - SP</p>
-                </a>
-              </li>
-              <li>
-                <div className="d-flex align-items-center">
-                  <span>🕒 Atendimento: Seg - Sex, 7:30 às 17:30 Sábado das 8:00 às 12:00</span>
-                </div>
-              </li>
-            </ul>
-          </div>
+
         </div>
       </header>
 
@@ -169,27 +149,79 @@ export default function Home() {
 
       <section className="p-8 text-center hexagon-section">
         {partnessList.map((partness) =>
-          <PartnessList key={partness.img} img={partness.img} />
+          <PartnessList key={partness.img} title={partness.title} img={partness.img} />
         )}
       </section>
 
       <section className="p-8 text-center">
-        <section className="map-section">
-          <h2 className="text-center mb-4">Onde estamos</h2>
-          <MapViewWrapper />
+        <h2 className="text-center mb-4">Onde estamos</h2>
+        <MapViewWrapper />
+
+        <section className="d-flex justify-content-center row" style={{color: '#f1c40f'}}>
+         <div className="text-center">
+            <Image
+              src="/images/favicon.png"
+              alt="Logo Calhas Franco"
+              width={300}
+              height={160}
+            />
+          </div>
+          <div>
+            <h2>Serviços Especializados</h2>
+            <h3>Calhas e Manutenções</h3>
+          </div>
         </section>
       </section>
 
-      <footer className="text-white py-4 text-center">
-        <div className="circle-logo">
-          <Image src={'/images/favicon.png'} alt="" width={300} height={160} />
+      <footer className="text-white py-5">
+        <div className="container">
+          <div className="row text-start">
+            {/* Coluna 1 - Informações de contato */}
+            <div className="col-md-4 mb-4">
+              <h5 className="text-uppercase">CALHAS FRANCO</h5>
+              <hr className="border-light w-25 mb-2 mt-1" />
+              <p className="mb-1">calhasfranco.manutencoes@outlook.com.br</p>
+              <p className="mb-1">
+                Rua Ferrúcio Augusto Testa, 52<br />
+                Vila Guilherme - Jaguariúna - SP
+              </p>
+              <p className="mb-0">(19) 99637-9679</p>
+            </div>
+
+            {/* Coluna 2 - Produtos */}
+            <div className="col-md-4 mb-4">
+              <h5 className="text-uppercase">Produtos</h5>
+              <hr className="border-light w-25 mb-2 mt-1" />
+              <ul className="list-unstyled">
+                <li>➜ Calhas</li>
+                <li>➜ Rufos</li>
+                <li>➜ Telhas</li>
+                <li>➜ Tubulações</li>
+                <li>➜ Coifas</li>
+                <li>➜ Chapas de Aço</li>
+              </ul>
+            </div>
+
+            {/* Coluna 3 - Redes sociais */}
+            <div className="col-md-4 mb-4">
+              <h5 className="text-uppercase">Acompanhe nossas redes</h5>
+              <hr className="border-light w-25 mb-2 mt-1" />
+              <div className="d-flex gap-2">
+                <a href="#" className="bg-white text-dark p-2 rounded" aria-label="Facebook">
+                  <i className="bi bi-facebook"></i>
+                </a>
+                <a href="#" className="bg-white text-dark p-2 rounded" aria-label="Google">
+                  <i className="bi bi-google"></i>
+                </a>
+                <a href="#" className="bg-white text-dark p-2 rounded" aria-label="Instagram">
+                  <i className="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <h2 className="text-3xl font-bold">Contato</h2>
-        <p className="mt-4">Entre em contato conosco:</p>
-        <p>Email: calhasfranco.manutencoes@outlook.com.br</p>
-        <p>Telefone: (19) 99637-9679</p>
-        <p>&copy; 2025 Calhas Franco - Todos os direitos reservados</p>
       </footer>
+
 
       <a
         href="https://wa.me/5519996379679"

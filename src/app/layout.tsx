@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.scss";
 
@@ -12,10 +11,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "calhasfranco.com.br",
-  description: "Construindo Qualidade de Vida",
-};
+
 
 export default function RootLayout({
   children,
@@ -24,6 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

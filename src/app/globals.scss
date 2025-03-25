@@ -1,6 +1,12 @@
 /* Reset básico não é necessário, pois Tailwind já cuida disso */
 @use '../scss/styles.scss' as *;
+@use "../scss/variables/colors" as *;
+@use "../scss/variables/typography.scss" as *;
 
+*{
+  font-family: '$font-family-base';
+  
+}
 /* Estilos gerais */
 header {
   display: flex;
@@ -12,11 +18,13 @@ header {
 header h1 {
   font-size: 2.5rem;
   text-transform: uppercase;
+  font-family: '$headings-font-family';
 }
 
 header p {
   font-size: 1.2rem;
   margin-top: 0.5rem;
+  font-family: '$headings-font-family';
 }
 
 section {
