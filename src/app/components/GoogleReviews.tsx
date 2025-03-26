@@ -10,7 +10,7 @@ export default function GoogleReviews() {
     }, []);
 
     return (
-        <div style={{ position: 'relative' }}>
+        <div style={{ position: 'relative',  width: 'fit-content'}}>
             <div className="elfsight-app-28a1cd3c-c90f-479e-b5b0-7d27ab264c9c" style={{ zIndex: 0 }}></div>
             <div
                 style={{
@@ -19,6 +19,7 @@ export default function GoogleReviews() {
                     position: 'absolute',
                     width: '225px',
                     height: '52px',
+                    zIndex: '9999',
                     backgroundColor: 'white'
                     
                 }}
