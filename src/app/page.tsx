@@ -163,9 +163,10 @@ export default function Home() {
         <h2 className="text-center mb-4">Onde estamos</h2>
         <MapViewWrapper />
 
-        <section className="d-flex justify-content-center row" style={{ color: '#f1c40f' }}>
-          <div className="text-center">
+        <section style={{ color: '#f1c40f' }}>
+          <div className="text-center mb-4">
             <Image
+              style={{ marginLeft: '-20px'}}
               src="/images/favicon.png"
               alt="Logo Calhas Franco"
               width={300}
