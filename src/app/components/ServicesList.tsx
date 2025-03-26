@@ -6,11 +6,11 @@ interface ServicesListInterface {
 
 export default function ServicesList({ label }: ServicesListInterface) {
   return (
-    <li>
-      <div className="mb-4 mb-md-0">
+    <li className="flex items-center gap-2 md:gap-4">
+      <div style={{marginLeft: '-40px'}}>
         <Image src="/images/success-green-check-mark-icon.svg" alt={label} width={30} height={30} />
       </div>
-      <span className="check"></span> {label}
+      <span>{label}</span>
     </li>
-  )
+  );
 }
