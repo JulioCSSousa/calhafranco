@@ -1,0 +1,9 @@
+.background-circle {
+  background: radial-gradient(circle at bottom left, #f1c40f 1%, transparent 7%),
+  radial-gradient(circle at top right, #f1c40f 1%, transparent 7%), 
+  linear-gradient(135deg, rgb(21, 28, 34) 25%, rgb(10, 22, 32) 50%, rgb(1, 7, 12) 100%);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid;
+  border-radius: 30px;
+}

@@ -146,7 +146,7 @@ export default function Home() {
         <h2>
           Calhas Franco atua na execução de obras nos mais diversos seguimentos do mercado.
         </h2>
-        <ul className="service-list-ul">
+        <ul className="background-circle">
           {servicesList.map((service) => (
             <ServicesList key={service.label} label={service.label} />
           ))}
