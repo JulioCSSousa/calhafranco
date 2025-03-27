@@ -65,7 +65,9 @@ export default function Home() {
         <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between">
           <div className="mb-4 mb-md-0">
             <Image src="/images/logo-contraste-removebg-preview.png" alt="Logo" width={300} height={150} />
-
+          </div>
+          <div className="slogan" style={{color: '#cfe8ff', display: 'flex', textAlign: 'center'}}>
+            <strong>Faça seu melhor, mesmo que suas condições não sejam as melhores</strong>
           </div>
         </div>
       </header>
@@ -129,11 +131,11 @@ export default function Home() {
         </div>
         <div className="bottom-stripe"></div>
       </section>
-      <section>
+      <section className="sloganSection">
         <SloganPage />
       </section>
       <section id="servicos" className="services-section">
-        <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '10px'}}>Nossos Serviços</h2>
+        <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '10px' }}>Nossos Serviços</h2>
         <div className="services-container">
           {servicesCard.map((service) =>
             <ServicesCard key={service.label} label={service.label} link={service.link} />
@@ -151,14 +153,7 @@ export default function Home() {
           </ul>
         </div>
       </section>
-      <section className="d-flex row-6 flex-wrap">
-
-        <section id="servicos">
-          <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '10px'}}>Nossos Produtos</h2>
-          <ServiceGrid />
-        </section>
-
-      </section>
+      <ServiceGrid />
       <section className="reviewSection">
         <GoogleReviews />
         <button className="btn btn-primary" id="reviewBtn"> Ver todos os Comentários</button>
