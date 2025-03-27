@@ -29,7 +29,7 @@ export const servicesList: servicesListInterface[] = [
   { label: "Manutenção Civil / Projetos" },
   { label: "Isolamentos Térmicos / Quente / Frio" },
   { label: "Impermeabilização de Lajes / Telhados" },
-  { label: "Laudos Técnicos Cautelar / Industrial / Residencial" },
+  { label: "Laudos Técnicos Cautelar " },
   { label: "Troca de Telhados e Manutenções Gerais" },
 ]
 
