@@ -66,7 +66,7 @@ export default function Home() {
           <div className="mb-4 mb-md-0">
             <Image src="/images/logo-contraste-removebg-preview.png" alt="Logo" width={300} height={150} />
           </div>
-          <div className="slogan" style={{color: '#cfe8ff', display: 'flex', textAlign: 'center'}}>
+          <div className="slogan" style={{ color: '#cfe8ff', display: 'flex', textAlign: 'center' }}>
             <strong>Faça seu melhor, mesmo que suas condições não sejam as melhores</strong>
           </div>
         </div>
@@ -143,16 +143,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projetos" className="services-checklist">
-        <div className="background-circle">
-          <h2>Calhas Franco atua na execução de obras nos mais diversos seguimentos do mercado.</h2>
-          <ul>
-            {servicesList.map((service) =>
-              <ServicesList key={service.label} label={service.label} />
-            )}
-          </ul>
-        </div>
+      <section id="projects" className="services-checklist">
+        <h2>
+          Calhas Franco atua na execução de obras nos mais diversos seguimentos do mercado.
+        </h2>
+        <ul className="service-list-ul">
+          {servicesList.map((service) => (
+            <ServicesList key={service.label} label={service.label} />
+          ))}
+        </ul>
       </section>
+
       <ServiceGrid />
       <section className="reviewSection">
         <GoogleReviews />
