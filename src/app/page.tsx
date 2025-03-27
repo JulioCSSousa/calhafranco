@@ -10,6 +10,7 @@ import MapViewWrapper from "./components/MapViewWrapper";
 import GoogleReviews from "./components/GoogleReviews";
 import SloganPage from "./components/HeroPage";
 import ServiceGrid from "./components/ServiceGrid";
+import Head from 'next/head';
 
 export const metadata: Metadata = {
   title: "Calhas Franco - Instalação de Calhas e Serviços Industriais em Jaguariúna",
@@ -30,6 +31,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div>
+      <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" />
       <Script
         id="local-business-jsonld"
         type="application/ld+json"
@@ -61,20 +63,19 @@ export default function Home() {
         }}
       />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-      <header className="py-4 text-white" style={{ background: 'linear-gradient(to right,rgb(55, 112, 161),rgb(66, 125, 177))' }}>
+      <header className="py-4 text-white" style={{ background: 'linear-gradient(to right,rgb(7, 46, 80),rgb(75, 123, 165))' }}>
         <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between">
           <div className="mb-4 mb-md-0">
             <Image src="/images/logo-contraste-removebg-preview.png" alt="Logo" width={300} height={150} />
           </div>
           <div className="slogan" style={{ color: '#cfe8ff', display: 'flex', textAlign: 'center' }}>
-            <strong>Faça seu melhor, mesmo que suas condições não sejam as melhores</strong>
+            <strong>"Faça seu melhor, mesmo que suas condições não sejam as melhores"</strong>
           </div>
         </div>
       </header>
 
-      <nav id="mainNav" className="navbar navbar-expand-lg d-flex">
+      <nav id="mainNav" className="navbar navbar-expand-lg navbar-dark bg-dark " >
         <div className="container-fluid justify-content-between align-items-center">
-          <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" />
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" style={{ filter: 'invert(1)' }}></span>
           </button>
@@ -142,23 +143,19 @@ export default function Home() {
           )}
         </div>
       </section>
-      <section id="projects" className="services-checklist">
-        <h2>
-          Calhas Franco atua na execução de obras nos mais diversos seguimentos do mercado.
-        </h2>
-        <ul className="service-list-ul">
-          {servicesList.map((service) => (
-            <ServicesList key={service.label} label={service.label} />
-          ))}
-        </ul>
-      </section>
+
+      <ul className="service-list-ul">
+        {servicesList.map((service) => (
+          <ServicesList key={service.label} label={service.label} />
+        ))}
+      </ul>
+
       <ServiceGrid />
       <section className="reviewSection">
         <GoogleReviews />
         <div>
           <button className="btn btn-primary" id="reviewBtn"> Ver todos os Comentários</button>
         </div>
-
       </section>
 
       <section className="p-8 text-center hexagon-section">
@@ -170,25 +167,22 @@ export default function Home() {
       <section className="p-8 text-center">
         <h2 className="text-center mb-4">Onde estamos</h2>
         <MapViewWrapper />
-
-        <section style={{ color: '#f1c40f' }}>
-          <div className="text-center mb-4">
-            <Image
-              style={{ marginLeft: '-20px' }}
-              src="/images/favicon.png"
-              alt="Logo Calhas Franco"
-              width={300}
-              height={160}
-            />
-          </div>
-          <div>
-            <h2>Serviços Especializados</h2>
-            <h3>Calhas e Manutenções</h3>
-          </div>
-        </section>
       </section>
-
       <footer className="text-white py-5">
+      <section className='logo-bottom-section' style={{ color: '#f1c40f'}}>
+        <div className="text-center mb-4">
+          <Image
+            src="/images/favicon.png"
+            alt="Logo Calhas Franco"
+            width={250}
+            height={160}
+          />
+        </div>
+        <div>
+          <h2>Serviços Especializados</h2>
+          <h3>Calhas e Manutenções</h3>
+        </div>
+      </section>
         <div className="container">
           <div className="row text-start">
             {/* Coluna 1 - Informações de contato */}
@@ -236,8 +230,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-
-
       <a
         href="https://wa.me/5519996379679"
         target="_blank"

@@ -71,13 +71,13 @@ footer {
     justify-content: center;
   }
 
-  .service-list-ul{
-    background: linear-gradient(135deg,rgb(31, 42, 51) 25%,rgb(10, 22, 32) 50%,rgb(1, 7, 12) 100%);
-    border: 1px solid;
-    border-radius: 30px;
-
-  }
-
   .reviewSection{
     display: contents;
+  }
+
+  .logo-bottom-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
