@@ -8,6 +8,8 @@ import PartnessList from "./components/PartnessList";
 import { partnessList, servicesCard, servicesList } from "./constants/clientData";
 import MapViewWrapper from "./components/MapViewWrapper";
 import GoogleReviews from "./components/GoogleReviews";
+import SloganPage from "./components/HeroPage";
+import ServiceGrid from "./components/ServiceGrid";
 
 export const metadata: Metadata = {
   title: "Calhas Franco - Instalação de Calhas e Serviços Industriais em Jaguariúna",
@@ -58,13 +60,13 @@ export default function Home() {
           }),
         }}
       />
-
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
       <header className="py-4 text-white" style={{ background: 'linear-gradient(to right, #004e92, #000428)' }}>
         <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between">
           <div className="mb-4 mb-md-0">
             <Image src="/images/logo-contraste-removebg-preview.png" alt="Logo" width={300} height={150} />
-          </div>
 
+          </div>
         </div>
       </header>
 
@@ -127,9 +129,11 @@ export default function Home() {
         </div>
         <div className="bottom-stripe"></div>
       </section>
-
+      <section>
+        <SloganPage />
+      </section>
       <section id="servicos" className="services-section">
-        <h2>Nossos Serviços</h2>
+        <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '10px'}}>Nossos Serviços</h2>
         <div className="services-container">
           {servicesCard.map((service) =>
             <ServicesCard key={service.label} label={service.label} link={service.link} />
@@ -147,7 +151,14 @@ export default function Home() {
           </ul>
         </div>
       </section>
-      
+      <section className="d-flex row-6 flex-wrap">
+
+        <section id="servicos">
+          <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '10px'}}>Nossos Produtos</h2>
+          <ServiceGrid />
+        </section>
+
+      </section>
       <section className="reviewSection">
         <GoogleReviews />
         <button className="btn btn-primary" id="reviewBtn"> Ver todos os Comentários</button>
@@ -166,7 +177,7 @@ export default function Home() {
         <section style={{ color: '#f1c40f' }}>
           <div className="text-center mb-4">
             <Image
-              style={{ marginLeft: '-20px'}}
+              style={{ marginLeft: '-20px' }}
               src="/images/favicon.png"
               alt="Logo Calhas Franco"
               width={300}

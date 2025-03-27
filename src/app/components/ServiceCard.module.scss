@@ -1,0 +1,54 @@
+.card {
+    border: 2px solid #004e92;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 78, 146, 0.2);
+    background-color: white;
+    transition: transform 0.3s ease;
+    height: 400px;
+  
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+  
+  .image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    color: #004e92;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 2rem;
+  
+    strong {
+      font-weight: 600;
+    }
+  }
+  
+  .button {
+    background-color: #004e92;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid white;
+    box-shadow: 0 4px 10px rgba(0, 78, 146, 0.3);
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #00376b;
+    }
+  }
+  

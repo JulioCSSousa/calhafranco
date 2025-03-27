@@ -11918,17 +11918,18 @@ textarea.form-control-lg {
 }
 
 .services-checklist {
-  background-color: #333;
-  color: #fff;
+  background: linear-gradient(135deg, #031e36 25%, #103e66 50%, #558bc2 100%);
+  color: #d1d5db;
   padding: 3rem 2rem;
   border-radius: 8px;
-  margin: 0 auto;
   text-align: center;
+  width: 100vw;
 }
 .services-checklist h2 {
   font-size: 1.8rem;
-  color: #f1c40f;
+  color: #cfe8ff;
   margin-bottom: 2rem;
+  font-weight: bold;
   text-transform: uppercase;
 }
 .services-checklist ul {
@@ -12062,10 +12063,6 @@ textarea.form-control-lg {
 }
 #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
   color: #0d6efd;
-}
-
-.background-circle {
-  background: radial-gradient(circle at bottom left, #f1c40f 1%, transparent 7%), radial-gradient(circle at top right, #f1c40f 1%, transparent 7%);
 }
 
 /*# sourceMappingURL=styles.css.map */
