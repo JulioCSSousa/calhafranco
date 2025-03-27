@@ -2,10 +2,10 @@
 @use '../scss/styles.scss' as *;
 @use "../scss/variables/colors" as *;
 @use "../scss/variables/typography.scss" as *;
+@import 'leaflet/dist/leaflet.css';
 
 *{
   font-family: '$font-family-base';
-  overflow-x: hidden;
   
 }
 /* Estilos gerais */
