@@ -72,10 +72,12 @@ footer {
   }
 
   .service-list-ul{
-    max-width: 100%;
-    width: 100%;
-    background: linear-gradient(135deg,rgb(21, 28, 34) 25%,rgb(10, 22, 32) 50%,rgb(1, 7, 12) 100%);
+    background: linear-gradient(135deg,rgb(31, 42, 51) 25%,rgb(10, 22, 32) 50%,rgb(1, 7, 12) 100%);
     border: 1px solid;
     border-radius: 30px;
 
+  }
+
+  .reviewSection{
+    display: contents;
   }

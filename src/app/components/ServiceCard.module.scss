@@ -56,3 +56,13 @@
     background-color: #00376b;
   }
 }
+
+.top-stripe {
+  top: 0;
+  background: linear-gradient(135deg, #000 50%, 'yellow' 50%);
+}
+
+.bottom-stripe {
+  bottom: 0;
+  background: linear-gradient(-135deg, #000 50%, '$yellow' 50%);
+}

@@ -1,5 +1,5 @@
 .services-checklist {
-  background: linear-gradient(135deg, #031e36 25%, #103e66 50%, #558bc2 100%);
+  background: linear-gradient(135deg, #296599 25%, #4b8dc7 50%, #558bc2 100%);
   color: #d1d5db;
   padding: 3rem 2rem;
   border-radius: 8px;
@@ -35,3 +35,36 @@
     }
   }
 
+  .service-list-ul {
+    position: relative;
+    overflow: hidden;
+  
+    // fundo atual
+    background: linear-gradient(135deg, rgb(21, 28, 34) 25%, rgb(10, 22, 32) 50%, rgb(1, 7, 12) 100%);
+    border: 1px solid;
+    border-radius: 30px;
+  
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 1, 0.15); // amarelo com transparência
+      z-index: 0;
+    }
+  
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: -50px;
+      left: -50px;
+    }
+  
+    &::after {
+      width: 300px;
+      height: 300px;
+      bottom: -100px;
+      right: -100px;
+    }
+  }
+  

@@ -61,7 +61,7 @@ export default function Home() {
         }}
       />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-      <header className="py-4 text-white" style={{ background: 'linear-gradient(to right, #004e92, #000428)' }}>
+      <header className="py-4 text-white" style={{ background: 'linear-gradient(to right,rgb(55, 112, 161),rgb(66, 125, 177))' }}>
         <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between">
           <div className="mb-4 mb-md-0">
             <Image src="/images/logo-contraste-removebg-preview.png" alt="Logo" width={300} height={150} />
@@ -121,7 +121,7 @@ export default function Home() {
         />
       </div>
 
-      <section id='quem-somos' className="about-section">
+      <section id='about-us' className="about-section">
         <div className="top-stripe"></div>
         <div className="about-content">
           <h2 className="section-title">QUEM SOMOS</h2>
@@ -142,7 +142,6 @@ export default function Home() {
           )}
         </div>
       </section>
-
       <section id="projects" className="services-checklist">
         <h2>
           Calhas Franco atua na execução de obras nos mais diversos seguimentos do mercado.
@@ -153,11 +152,13 @@ export default function Home() {
           ))}
         </ul>
       </section>
-
       <ServiceGrid />
       <section className="reviewSection">
         <GoogleReviews />
-        <button className="btn btn-primary" id="reviewBtn"> Ver todos os Comentários</button>
+        <div>
+          <button className="btn btn-primary" id="reviewBtn"> Ver todos os Comentários</button>
+        </div>
+
       </section>
 
       <section className="p-8 text-center hexagon-section">

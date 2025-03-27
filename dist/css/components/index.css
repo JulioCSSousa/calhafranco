@@ -11860,8 +11860,8 @@ textarea.form-control-lg {
 }
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  /* Alterando para a cor preta */
   background-color: black;
+  height: 50px;
   /* Mudar a cor do ícone do botão toggle */
 }
 #mainNav .navbar-brand {
