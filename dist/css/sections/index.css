@@ -11922,7 +11922,6 @@ textarea.form-control-lg {
   color: #d1d5db;
   padding: 3rem 2rem;
   border-radius: 8px;
-  text-align: center;
 }
 .services-checklist h2 {
   font-size: 1.8rem;
@@ -11930,25 +11929,26 @@ textarea.form-control-lg {
   margin-bottom: 2rem;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
 }
-.services-checklist ul {
-  list-style: none;
-}
-.services-checklist ul li {
+
+li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
   line-height: 1.5;
+  gap: 1rem;
 }
-.services-checklist ul li .check {
-  display: inline-block;
+@media (max-width: 500px) {
+  li {
+    font-size: 1rem;
+  }
+}
+li .check {
   width: 28px;
   height: 28px;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  mask-size: contain;
-  -webkit-mask-size: contain;
+  flex-shrink: 0;
 }
 
 .about-section {
