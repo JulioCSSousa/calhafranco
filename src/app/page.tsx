@@ -142,22 +142,13 @@ export default function Home() {
           )}
         </div>
       </section>
-
-      <section id="projects" className="services-checklist">
-        <h2>
-          Calhas Franco atua na execução de obras nos mais diversos seguimentos do mercado.
-        </h2>
-        <ul className="service-list-ul">
-          {servicesList.map((service) => (
-            <ServicesList key={service.label} label={service.label} />
-          ))}
-        </ul>
-      </section>
-
       <ServiceGrid />
       <section className="reviewSection">
         <GoogleReviews />
-        <button className="btn btn-primary" id="reviewBtn"> Ver todos os Comentários</button>
+        <div>
+          <button className="btn btn-primary" id="reviewBtn"> Ver todos os Comentários</button>
+        </div>
+
       </section>
 
       <section className="p-8 text-center hexagon-section">
