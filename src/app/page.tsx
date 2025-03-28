@@ -10,7 +10,6 @@ import MapViewWrapper from "./components/MapViewWrapper";
 import GoogleReviews from "./components/GoogleReviews";
 import SloganPage from "./components/HeroPage";
 import ServiceGrid from "./components/ServiceGrid";
-import Head from 'next/head';
 
 export const metadata: Metadata = {
   title: "Calhas Franco - Instalação de Calhas e Serviços Industriais em Jaguariúna",
@@ -80,15 +79,15 @@ export default function Home() {
             <span className="navbar-toggler-icon" style={{ filter: 'invert(1)' }}></span>
           </button>
           <div id="navbarResponsive" className="collapse navbar-collapse">
-            <ul className="navbar-nav d-flex align-items-center gap-4">
+            <ul className="navbar-nav ">
               <li className="nav-item">
-                <a className="nav-link" href="#quem-somos">👨‍💼 Quem somos</a>
+                <a className="nav-link" href="#about-us">Quem somos</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#servicos">🛠️ Serviços</a>
+                <a className="nav-link" href="#serviceSection">Serviços</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#projetos">🏗️ Projetos</a>
+                <a className="nav-link" href="#ServiceGrid">Projetos</a>
               </li>
               <li className="nav-item d-flex align-items-center">
                 <a className="nav-link d-flex align-items-center" href="https://www.instagram.com/calhas_franco" target="_blank">
@@ -105,7 +104,7 @@ export default function Home() {
               <li className="nav-item d-flex align-items-center">
                 <a className="nav-link d-flex align-items-center" href="https://wa.me/5519996379679" target="_blank">
                   <Image src="/images/whatsapp-svgrepo-com.svg" alt="WhatsApp" width={30} height={30} />
-                  <span className="ms-2">Obter Cotação</span>
+                  <span className="ms-2">Orçamento</span>
                 </a>
               </li>
             </ul>
@@ -135,7 +134,7 @@ export default function Home() {
       <section className="sloganSection">
         <SloganPage />
       </section>
-      <section id="servicos" className="services-section">
+      <section id="services" className="services-section">
         <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '10px' }}>Nossos Serviços</h2>
         <div className="services-container">
           {servicesCard.map((service) =>
@@ -144,13 +143,22 @@ export default function Home() {
         </div>
       </section>
 
-      <ul className="service-list-ul">
-        {servicesList.map((service) => (
-          <ServicesList key={service.label} label={service.label} />
-        ))}
-      </ul>
+      <section id="serviceSection">
+        <ul className="service-list-ul">
+          <h2 style={{ textAlign: 'center', marginBottom: '2rem', color: 'white', borderRadius: '10px' }}>Calhas Franco atua na execução de obras nos mais diversos seguimentos do mercado.</h2>
+          {servicesList.map((service) => (
+            <ServicesList key={service.label} label={service.label} />
+          ))}
+        </ul>
+      </section>
 
-      <ServiceGrid />
+      <section>
+        <div className="title-products">
+          <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '10px' }}>Nossos Produtos</h2>
+        </div>
+        <ServiceGrid />
+      </section>
+
       <section className="reviewSection">
         <GoogleReviews />
         <div>
@@ -164,25 +172,26 @@ export default function Home() {
         )}
       </section>
 
+
       <section className="p-8 text-center">
         <h2 className="text-center mb-4">Onde estamos</h2>
         <MapViewWrapper />
       </section>
       <footer className="text-white py-5">
-      <section className='logo-bottom-section' style={{ color: '#f1c40f'}}>
-        <div className="text-center mb-4">
-          <Image
-            src="/images/favicon.png"
-            alt="Logo Calhas Franco"
-            width={250}
-            height={160}
-          />
-        </div>
-        <div>
-          <h2>Serviços Especializados</h2>
-          <h3>Calhas e Manutenções</h3>
-        </div>
-      </section>
+        <section className='logo-bottom-section' style={{ color: '#f1c40f' }}>
+          <div className="text-center mb-4">
+            <Image
+              src="/images/favicon.png"
+              alt="Logo Calhas Franco"
+              width={250}
+              height={160}
+            />
+          </div>
+          <div>
+            <h2>Serviços Especializados</h2>
+            <h3>Calhas e Manutenções</h3>
+          </div>
+        </section>
         <div className="container">
           <div className="row text-start">
             {/* Coluna 1 - Informações de contato */}
@@ -215,18 +224,19 @@ export default function Home() {
             <div className="col-md-4 mb-4">
               <h5 className="text-uppercase">Acompanhe nossas redes</h5>
               <hr className="border-light w-25 mb-2 mt-1" />
-              <div className="d-flex gap-2">
-                <a href="https://www.facebook.com/people/Calhas-Franco/61563856175010" className="bg-white text-dark p-2 rounded icon-hover" aria-label="Facebook">
-                  <i className="bi bi-facebook"></i>
+              <div className="d-flex gap-3">
+                <a href="https://www.facebook.com/people/Calhas-Franco/61563856175010" className="text-white" aria-label="Facebook">
+                  <i className="bi bi-facebook fs-4"></i>
                 </a>
-                <a href="https://g.co/kgs/2dHRuFS" className="bg-white text-dark p-2 rounded icon-hover" aria-label="Google">
-                  <i className="bi bi-google"></i>
+                <a href="https://g.co/kgs/2dHRuFS" className="text-white" aria-label="Google">
+                  <i className="bi bi-google fs-4"></i>
                 </a>
-                <a href="https://www.instagram.com/calhas_franco" className="bg-white text-dark p-2 rounded icon-hover" aria-label="Instagram icon-hover">
-                  <i className="bi bi-instagram"></i>
+                <a href="https://www.instagram.com/calhas_franco" className="text-white" aria-label="Instagram">
+                  <i className="bi bi-instagram fs-4"></i>
                 </a>
               </div>
             </div>
+
           </div>
         </div>
       </footer>

@@ -81,3 +81,14 @@ footer {
     justify-content: center;
     align-items: center;
   }
+//mobile toggle align
+  @media (max-width: 991.98px) { 
+    .navbar-nav .nav-item {
+      margin-bottom: 0.5rem;
+    }// mesmo breakpoint de navbar-expand-lg
+    #navbarResponsive .navbar-nav {
+      align-items: center;
+      word-spacing: 1;
+    }
+  }
+  
