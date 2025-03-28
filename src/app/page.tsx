@@ -68,7 +68,7 @@ export default function Home() {
             <Image src="/images/logo-contraste-removebg-preview.png" alt="Logo" width={300} height={150} />
           </div>
           <div className="slogan" style={{ color: '#cfe8ff', display: 'flex', textAlign: 'center' }}>
-            <strong><p>{`Faça seu melhor, mesmo que suas condições não sejam as "melhores"`}</p>
+            <strong><p>{`"Faça seu melhor, mesmo que suas condições não sejam as melhores"`}</p>
             </strong>
           </div>
         </div>
@@ -133,7 +133,7 @@ export default function Home() {
         <SloganPage />
       </section>
       <section id="services" className="services-section">
-        <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '30px' }}>Nossos Serviços</h2>
+        <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '30px', fontSize: '2rem'}}>Nossos Serviços</h2>
         <div className="services-container">
           {servicesCard.map((service) =>
             <ServicesCard key={service.label} label={service.label} link={service.link} />
