@@ -68,7 +68,8 @@ export default function Home() {
             <Image src="/images/logo-contraste-removebg-preview.png" alt="Logo" width={300} height={150} />
           </div>
           <div className="slogan" style={{ color: '#cfe8ff', display: 'flex', textAlign: 'center' }}>
-            <strong>"Faça seu melhor, mesmo que suas condições não sejam as melhores"</strong>
+            <strong><p>{`Faça seu melhor, mesmo que suas condições não sejam as "melhores"`}</p>
+            </strong>
           </div>
         </div>
       </header>
