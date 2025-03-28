@@ -74,10 +74,10 @@ export default function Home() {
         </div>
       </header>
 
-      <nav id="mainNav" className="navbar navbar-expand-lg navbar-dark bg-dark " >
+      <nav id="mainNav" className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "#e3f2fd" }} >
         <div className="container-fluid justify-content-between align-items-center">
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon" style={{ filter: 'invert(1)' }}></span>
+            <span className="navbar-toggler-icon" style={{ filter: 'invert(0)' }}></span>
           </button>
           <div id="navbarResponsive" className="collapse navbar-collapse">
             <ul className="navbar-nav ">
@@ -91,21 +91,18 @@ export default function Home() {
                 <a className="nav-link" href="#ServiceGrid">Projetos</a>
               </li>
               <li className="nav-item d-flex align-items-center">
-                <a className="nav-link d-flex align-items-center" href="https://www.instagram.com/calhas_franco" target="_blank">
+                <a className="nav-link d-flex align-items-center" href="https://www.instagram.com/calhas_franco" target="_blank" >
                   <Image src="/images/instagram-1-svgrepo-com.svg" alt="Instagram" width={30} height={30} />
-                  <span className="ms-2">Instagram</span>
                 </a>
               </li>
               <li className="nav-item d-flex align-items-center">
                 <a className="nav-link d-flex align-items-center" href="https://www.facebook.com/people/Calhas-Franco/61563856175010" target="_blank">
                   <Image src="/images/icons8-facebook-novo.svg" alt="Facebook" width={30} height={30} />
-                  <span className="ms-2">Facebook</span>
                 </a>
               </li>
               <li className="nav-item d-flex align-items-center">
                 <a className="nav-link d-flex align-items-center" href="https://wa.me/5519996379679" target="_blank">
                   <Image src="/images/whatsapp-svgrepo-com.svg" alt="WhatsApp" width={30} height={30} />
-                  <span className="ms-2">Orçamento</span>
                 </a>
               </li>
             </ul>
@@ -136,7 +133,7 @@ export default function Home() {
         <SloganPage />
       </section>
       <section id="services" className="services-section">
-        <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '10px' }}>Nossos Serviços</h2>
+        <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '30px' }}>Nossos Serviços</h2>
         <div className="services-container">
           {servicesCard.map((service) =>
             <ServicesCard key={service.label} label={service.label} link={service.link} />
@@ -144,18 +141,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="serviceSection">
-        <ul className="service-list-ul">
-          <h2 style={{ textAlign: 'center', marginBottom: '2rem', color: 'white', borderRadius: '10px' }}>Calhas Franco atua na execução de obras nos mais diversos seguimentos do mercado.</h2>
-          {servicesList.map((service) => (
-            <ServicesList key={service.label} label={service.label} />
-          ))}
-        </ul>
-      </section>
+      <ul className="service-list-ul">
+        <h2 style={{marginTop: '2rem', color: 'white',}}>Calhas Franco atua na execução de obras nos mais diversos seguimentos do mercado.</h2>
+        {servicesList.map((service) => (
+          <ServicesList key={service.label} label={service.label} />
+        ))}
+      </ul>
 
       <section>
         <div className="title-products">
-          <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '10px' }}>Nossos Produtos</h2>
+          <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '30px' }}>Nossos Produtos</h2>
         </div>
         <ServiceGrid />
       </section>
@@ -166,11 +161,16 @@ export default function Home() {
           <button className="btn btn-primary" id="reviewBtn"> Ver todos os Comentários</button>
         </div>
       </section>
+      <section className="">
+        <div className="parness-title">
+          <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '30px' }}>Nossos Parceiros</h2>
+        </div>
+        <div className="p-8 text-center hexagon-section">
+          {partnessList.map((partness) =>
+            <PartnessList key={partness.img} title={partness.title} img={partness.img} />
+          )}
+        </div>
 
-      <section className="p-8 text-center hexagon-section">
-        {partnessList.map((partness) =>
-          <PartnessList key={partness.img} title={partness.title} img={partness.img} />
-        )}
       </section>
 
 
@@ -178,21 +178,8 @@ export default function Home() {
         <h2 className="text-center mb-4">Onde estamos</h2>
         <MapViewWrapper />
       </section>
+
       <footer className="text-white py-5">
-        <section className='logo-bottom-section' style={{ color: '#f1c40f' }}>
-          <div className="text-center mb-4">
-            <Image
-              src="/images/favicon.png"
-              alt="Logo Calhas Franco"
-              width={250}
-              height={160}
-            />
-          </div>
-          <div>
-            <h2>Serviços Especializados</h2>
-            <h3>Calhas e Manutenções</h3>
-          </div>
-        </section>
         <div className="container">
           <div className="row text-start">
             {/* Coluna 1 - Informações de contato */}
@@ -237,7 +224,6 @@ export default function Home() {
                 </a>
               </div>
             </div>
-
           </div>
         </div>
       </footer>

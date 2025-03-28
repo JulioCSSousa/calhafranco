@@ -33,14 +33,41 @@ section {
   text-align: center;
 }
 
-/* Rodapé */
+
+@media(min-width: 500){
 footer {
-  background: #011e3b;
-  color: white;
+  background: #2976da;
+  color: #cfe8ff;
   text-align: center;
   padding: 1.5rem;
   margin-top: 2rem;
 }
+}
+@media (max-width: 500px) {
+  footer {
+    background: #2976da;
+    color: #cfe8ff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+
+    // centraliza os elementos no mobile
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .container,
+    .text-start {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
 
   .whatsapp-button {
     position: fixed;

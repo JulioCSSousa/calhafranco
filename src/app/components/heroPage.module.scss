@@ -5,7 +5,9 @@
   gap: 2rem;
   padding: 4rem 2rem;
   flex-direction: row;
-  background: linear-gradient(135deg, rgb(21, 28, 34) 25%, rgb(10, 22, 32) 50%, rgb(1, 7, 12) 100%);
+  background: linear-gradient(135deg, #0C3C69, #103F49);
+
+
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -22,7 +24,7 @@
   font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0.1em;
-  color: #4b5563;
+  color: #F9FAFB;
 }
 
 .title {
@@ -45,8 +47,8 @@
 .button {
   margin-top: 2rem;
   padding: 0.75rem 2rem;
-  background-color: #004e92;
-  color: #fff;
+  background-color: #f1c40f;
+  color: #070101;
   font-weight: 600;
   border-radius: 1.5rem;
   border: 2px solid white;
