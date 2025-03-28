@@ -30,6 +30,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div>
+      <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" />
       <Script
         id="local-business-jsonld"
         type="application/ld+json"
@@ -61,33 +62,33 @@ export default function Home() {
         }}
       />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-      <header className="py-4 text-white" style={{ background: 'linear-gradient(to right,rgb(55, 112, 161),rgb(66, 125, 177))' }}>
+      <header className="py-4 text-white" style={{ background: 'linear-gradient(to right,rgb(7, 46, 80),rgb(75, 123, 165))' }}>
         <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between">
           <div className="mb-4 mb-md-0">
             <Image src="/images/logo-contraste-removebg-preview.png" alt="Logo" width={300} height={150} />
           </div>
           <div className="slogan" style={{ color: '#cfe8ff', display: 'flex', textAlign: 'center' }}>
-            <strong>Faça seu melhor, mesmo que suas condições não sejam as melhores</strong>
+            <strong><p>{`Faça seu melhor, mesmo que suas condições não sejam as "melhores"`}</p>
+            </strong>
           </div>
         </div>
       </header>
 
-      <nav id="mainNav" className="navbar navbar-expand-lg d-flex">
+      <nav id="mainNav" className="navbar navbar-expand-lg navbar-dark bg-dark " >
         <div className="container-fluid justify-content-between align-items-center">
-          <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" />
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" style={{ filter: 'invert(1)' }}></span>
           </button>
           <div id="navbarResponsive" className="collapse navbar-collapse">
-            <ul className="navbar-nav d-flex align-items-center gap-4">
+            <ul className="navbar-nav ">
               <li className="nav-item">
-                <a className="nav-link" href="#quem-somos">👨‍💼 Quem somos</a>
+                <a className="nav-link" href="#about-us">Quem somos</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#servicos">🛠️ Serviços</a>
+                <a className="nav-link" href="#serviceSection">Serviços</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#projetos">🏗️ Projetos</a>
+                <a className="nav-link" href="#ServiceGrid">Projetos</a>
               </li>
               <li className="nav-item d-flex align-items-center">
                 <a className="nav-link d-flex align-items-center" href="https://www.instagram.com/calhas_franco" target="_blank">
@@ -104,7 +105,7 @@ export default function Home() {
               <li className="nav-item d-flex align-items-center">
                 <a className="nav-link d-flex align-items-center" href="https://wa.me/5519996379679" target="_blank">
                   <Image src="/images/whatsapp-svgrepo-com.svg" alt="WhatsApp" width={30} height={30} />
-                  <span className="ms-2">Obter Cotação</span>
+                  <span className="ms-2">Orçamento</span>
                 </a>
               </li>
             </ul>
@@ -134,7 +135,7 @@ export default function Home() {
       <section className="sloganSection">
         <SloganPage />
       </section>
-      <section id="servicos" className="services-section">
+      <section id="services" className="services-section">
         <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '10px' }}>Nossos Serviços</h2>
         <div className="services-container">
           {servicesCard.map((service) =>
@@ -142,23 +143,28 @@ export default function Home() {
           )}
         </div>
       </section>
-      <section id="projects" className="services-checklist">
-        <h2>
-          Calhas Franco atua na execução de obras nos mais diversos seguimentos do mercado.
-        </h2>
+
+      <section id="serviceSection">
         <ul className="service-list-ul">
+          <h2 style={{ textAlign: 'center', marginBottom: '2rem', color: 'white', borderRadius: '10px' }}>Calhas Franco atua na execução de obras nos mais diversos seguimentos do mercado.</h2>
           {servicesList.map((service) => (
             <ServicesList key={service.label} label={service.label} />
           ))}
         </ul>
       </section>
-      <ServiceGrid />
+
+      <section>
+        <div className="title-products">
+          <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '10px' }}>Nossos Produtos</h2>
+        </div>
+        <ServiceGrid />
+      </section>
+
       <section className="reviewSection">
         <GoogleReviews />
         <div>
           <button className="btn btn-primary" id="reviewBtn"> Ver todos os Comentários</button>
         </div>
-
       </section>
 
       <section className="p-8 text-center hexagon-section">
@@ -167,17 +173,18 @@ export default function Home() {
         )}
       </section>
 
+
       <section className="p-8 text-center">
         <h2 className="text-center mb-4">Onde estamos</h2>
         <MapViewWrapper />
-
-        <section style={{ color: '#f1c40f' }}>
+      </section>
+      <footer className="text-white py-5">
+        <section className='logo-bottom-section' style={{ color: '#f1c40f' }}>
           <div className="text-center mb-4">
             <Image
-              style={{ marginLeft: '-20px' }}
               src="/images/favicon.png"
               alt="Logo Calhas Franco"
-              width={300}
+              width={250}
               height={160}
             />
           </div>
@@ -186,9 +193,6 @@ export default function Home() {
             <h3>Calhas e Manutenções</h3>
           </div>
         </section>
-      </section>
-
-      <footer className="text-white py-5">
         <div className="container">
           <div className="row text-start">
             {/* Coluna 1 - Informações de contato */}
@@ -221,23 +225,22 @@ export default function Home() {
             <div className="col-md-4 mb-4">
               <h5 className="text-uppercase">Acompanhe nossas redes</h5>
               <hr className="border-light w-25 mb-2 mt-1" />
-              <div className="d-flex gap-2">
-                <a href="https://www.facebook.com/people/Calhas-Franco/61563856175010" className="bg-white text-dark p-2 rounded icon-hover" aria-label="Facebook">
-                  <i className="bi bi-facebook"></i>
+              <div className="d-flex gap-3">
+                <a href="https://www.facebook.com/people/Calhas-Franco/61563856175010" className="text-white" aria-label="Facebook">
+                  <i className="bi bi-facebook fs-4"></i>
                 </a>
-                <a href="https://g.co/kgs/2dHRuFS" className="bg-white text-dark p-2 rounded icon-hover" aria-label="Google">
-                  <i className="bi bi-google"></i>
+                <a href="https://g.co/kgs/2dHRuFS" className="text-white" aria-label="Google">
+                  <i className="bi bi-google fs-4"></i>
                 </a>
-                <a href="https://www.instagram.com/calhas_franco" className="bg-white text-dark p-2 rounded icon-hover" aria-label="Instagram icon-hover">
-                  <i className="bi bi-instagram"></i>
+                <a href="https://www.instagram.com/calhas_franco" className="text-white" aria-label="Instagram">
+                  <i className="bi bi-instagram fs-4"></i>
                 </a>
               </div>
             </div>
+
           </div>
         </div>
       </footer>
-
-
       <a
         href="https://wa.me/5519996379679"
         target="_blank"

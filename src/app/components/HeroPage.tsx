@@ -4,11 +4,9 @@ export default function HeroSection() {
   return (
     <section className={styles.heroSection}>
       <div className={styles.textContainer}>
-        <h1 className={styles.title}>
-          <br /> Calhas Franco
-        </h1>
+      <img src="/images/logo-contraste-removebg-preview.png" alt="Logo" width={300} height={150} />
         <p className={styles.subtitle}>Previna-se de problemas!</p>
-        <a href='https://wa.me/5519996379679'><button className={styles.button} >Orçamento sem com</button></a>
+        <a href='https://wa.me/5519996379679'><button className={styles.button} >Orçamento sem compromisso</button></a>
       </div>
       <div className={styles.imageContainer}>
         <img

@@ -7,11 +7,11 @@ interface PartnessListInterface {
 
 export default function PartnessList({ title, img }: PartnessListInterface) {
   return (
-    <div>
-      <div className="partness-title" style={{color: '#004e92', fontFamily: 'inherit', fontWeight: 'bold' ,fontSize: '20px', marginBottom: '10px'}}>
+    <div className="hexagon-wrapper">
+      <div className="partness-title">
         {title}
       </div>
       <HexagonImage src={img} alt={img} />
     </div>
-  )
+  );
 }

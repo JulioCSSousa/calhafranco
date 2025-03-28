@@ -5,6 +5,7 @@
   gap: 2rem;
   padding: 4rem 2rem;
   flex-direction: row;
+  background: linear-gradient(135deg, rgb(21, 28, 34) 25%, rgb(10, 22, 32) 50%, rgb(1, 7, 12) 100%);
 
   @media (max-width: 768px) {
     flex-direction: column;
