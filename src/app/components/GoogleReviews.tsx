@@ -19,8 +19,8 @@ export default function GoogleReviews() {
                     position: 'absolute',
                     width: '250px',
                     height: '52px',
-                    backgroundColor: 'white'
-                    
+                    backgroundColor: 'white',
+                    zIndex: 9999
                 }}
             >
             </div>
