@@ -1,92 +1,81 @@
 .heroSection {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 4rem 2rem;
-  flex-direction: row;
-  background: linear-gradient(135deg, #0C3C69, #103F49);
-
-
-  @media (max-width: 768px) {
-    flex-direction: column;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #002f4b, #005c97);
+  color: #fff;
+  text-align: center;
+}
+@media(min-width: 768){
+  .heroSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 600px;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #002f4b, #005c97);
+    color: #fff;
     text-align: center;
   }
 }
 
 .textContainer {
-  flex: 1;
-}
+  margin-bottom: 2rem;
 
-.subtitle {
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  color: #F9FAFB;
-}
-
-.title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #004e92;
-  margin: 1rem 0;
-
-  @media (max-width: 768px) {
-    font-size: 2rem;
+  .subtitle {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #cfe8ff;
   }
-}
 
-.description {
-  font-size: 1.125rem;
-  color: #1f2937;
-  line-height: 1.6;
-}
+  .button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #00aaff;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
 
-.button {
-  margin-top: 2rem;
-  padding: 0.75rem 2rem;
-  background-color: #f1c40f;
-  color: #070101;
-  font-weight: 600;
-  border-radius: 1.5rem;
-  border: 2px solid white;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: #4b5563;
+    &:hover {
+      background-color: #008cd1;
+    }
   }
 }
 
 .imageContainer {
-  flex: 1;
   display: flex;
   justify-content: center;
-}
-
-.image {
-  border-radius: 0.75rem;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
-  height: auto;
-
-  @media (max-width: 768px) {
-    height: 200px;
-    object-fit: cover;
-  }
-}
-
-.video-wrapper {
   width: 100%;
-  height: 300px; // ou qualquer valor proporcional
-  overflow: hidden;
-  border-radius: 12px;
-
-  video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 }
 
+.videoWrapper {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 1rem;
+}
 
+.video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  max-height: 350px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .textContainer .subtitle {
+    font-size: 1rem;
+  }
+
+  .textContainer .button {
+    font-size: 0.9rem;
+  }
+
+  .video {
+    max-height: 250px;
+  }
+}
