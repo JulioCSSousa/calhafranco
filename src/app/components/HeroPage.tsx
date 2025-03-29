@@ -19,7 +19,7 @@ export default function HeroSection() {
       <div className={styles.imageContainer}>
         <div className={styles.videoWrapper}>
           <video controls muted loop playsInline className={styles.video}>
-            <source src="/videos/intro-video.mp4" type="video/mp4" />
+            <source src="/videos/video-intro.mp4" type="video/mp4" />
             Seu navegador não suporta vídeo.
           </video>
         </div>
