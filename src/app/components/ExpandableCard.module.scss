@@ -1,0 +1,84 @@
+.card {
+  border: 2px solid #004e92;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; // <- ESSENCIAL para igualar a altura
+}
+
+
+.image {
+  width: 100%;
+  height: 300px;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #00376b;
+}
+
+.description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.2;
+  max-height: 4.8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; // mostrar só 3 linhas
+  -webkit-box-orient: vertical;
+  transition: max-height 0.3s ease;
+
+  &.expanded {
+    max-height: 1500px;
+    -webkit-line-clamp: unset;
+    overflow: scroll;
+  }
+}
+
+.toggleButton {
+  margin-top: 1rem;
+  background: none;
+  border: none;
+  color: #004e92;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    padding: 1rem;
+    border-radius: 0.75rem;
+  }
+
+  .image {
+    height: 140px; // antes era tipo 200px
+    object-fit: cover;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .toggleButton {
+    font-size: 0.85rem;
+  }
+}

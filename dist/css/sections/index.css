@@ -11883,12 +11883,6 @@ textarea.form-control-lg {
 .services-section {
   padding: 4rem 2rem;
   background-color: #f8f8f8;
-  text-align: center;
-}
-.services-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  color: #333;
 }
 .services-section .services-container {
   display: grid;
@@ -11917,51 +11911,84 @@ textarea.form-control-lg {
   color: #004e92;
 }
 
-.services-checklist {
+#services2 {
   background: linear-gradient(135deg, #113555 25%, #296599 50%, #4b8dc7 100%);
   padding: 3rem 2rem;
   border-radius: 8px;
   margin-top: 20px;
 }
-.services-checklist h2 {
-  font-size: 1.8rem;
+#services2 h2 {
+  font-size: 1.4rem;
   color: #cfe8ff;
   margin-bottom: 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
   text-align: center;
-}
-
-li {
-  display: flex;
-  align-items: flex-start;
-  font-size: 1.2rem;
-  margin: 1.5rem;
-  line-height: 1.5;
-  color: white;
-}
-li span {
-  font-weight: 600;
-  color: #cfe8ff;
-}
-@media (max-width: 500px) {
-  li {
-    font-size: 1rem;
-  }
-}
-li .check {
-  width: 28px;
-  height: 28px;
-  flex-shrink: 0;
-  color: #00cc66;
 }
 
 .service-list-ul {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #0C3C69 0%, #113555 60%, #020c16 100%);
 }
 
+@media (max-width: 400px) {
+  #services2 {
+    padding: 2rem 1rem;
+  }
+  #services2 h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+  }
+  .service-list-ul {
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+  .service-list-ul li {
+    font-size: 0.95rem;
+  }
+  .service-list-ul li .check {
+    width: 22px;
+    height: 22px;
+  }
+}
+li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+li .icon-column {
+  width: 28px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+li .text-column {
+  padding-left: 0.25rem;
+  line-height: 1.2;
+}
+li span {
+  color: #cfe8ff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+@media (max-width: 400px) {
+  li span {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 768px) {
+  li {
+    align-items: center;
+  }
+  li .icon-column {
+    margin-top: 0;
+  }
+  li .text-column {
+    padding-left: 0.25rem;
+    line-height: 1.2;
+  }
+  li span {
+    font-size: 1.05rem;
+  }
+}
 .about-section {
   position: relative;
   background-size: cover;

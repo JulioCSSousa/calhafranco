@@ -1,0 +1,20 @@
+
+.productGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; // <- faz todos os cards crescerem igualmente
+  gap: 2rem;
+  padding: 2rem;
+}
+
+  
+.productCardWrapper {
+  flex: 1 1 40%;
+  display: flex;
+  align-items: stretch; // força o card interno a ocupar altura total
+  justify-content: center;
+}
+
+
+  
