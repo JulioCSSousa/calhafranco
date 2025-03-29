@@ -21,11 +21,11 @@ export const servicesCard: servicesCardInterface[] = [
 ]
 
 export const servicesList: servicesListInterface[] = [
-  { label: "Instalação e manutenção de Calhas e Rufos" },
+  { label: "Instalação e manutenção de Calhas / Rufos" },
   { label: "Tubulações, Coifas e Condutores" },
   { label: "Instalação de Sistemas de Exaustão" },
   { label: "Estruturas Metálicas" },
-  { label: "Instalação de Drywall / Placas Divisórias" },
+  { label: "Instalação de Drywall / Placas" },
   { label: "Manutenção Civil / Projetos" },
   { label: "Isolamentos Térmicos / Quente / Frio" },
   { label: "Impermeabilização de Lajes / Telhados" },

@@ -90,6 +90,12 @@ export default function Home() {
               <li className="nav-item">
                 <a className="nav-link" href="#ServiceGrid">Projetos</a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#products">Produtos</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#partness">Parceiros</a>
+              </li>
               <li className="nav-item d-flex align-items-center">
                 <a className="nav-link d-flex align-items-center" href="https://www.instagram.com/calhas_franco" target="_blank" >
                   <Image src="/images/instagram-1-svgrepo-com.svg" alt="Instagram" width={30} height={30} />
@@ -158,7 +164,7 @@ export default function Home() {
       </section>
 
 
-      <section className="product-grid">
+      <section className="product-grid" id="products">
       <h2 className="section-title mb-4 text-center">Nossos Produtos</h2>
       <div>
         <ProductGrid />
@@ -171,7 +177,7 @@ export default function Home() {
           <button className="btn btn-primary" id="reviewBtn"> Ver todos os Comentários</button>
         </div>
       </section>
-      <section>
+      <section id="partness">
       <h2 className="section-title mb-4 text-center">Nossos Parceiros</h2>
         <div className="p-8 text-center hexagon-section">
           {partnessList.map((partness) =>
