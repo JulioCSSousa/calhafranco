@@ -11951,16 +11951,14 @@ textarea.form-control-lg {
 }
 li {
   display: flex;
-  align-items: flex-start;
   margin-bottom: 1rem;
 }
 li .icon-column {
   width: 28px;
   flex-shrink: 0;
-  margin-top: 4px;
 }
 li .text-column {
-  padding-left: 0.25rem;
+  padding-left: 0.3rem;
   line-height: 1.2;
 }
 li span {
@@ -11975,9 +11973,6 @@ li span {
 }
 
 @media (min-width: 768px) {
-  li {
-    align-items: center;
-  }
   li .icon-column {
     margin-top: 0;
   }

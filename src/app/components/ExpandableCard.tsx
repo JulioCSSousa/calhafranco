@@ -21,7 +21,7 @@ export default function ExpandableCard({ image, alt, title, description }: Expan
 
       <div
         className={`${styles.description} ${expanded ? styles.expanded : ''}`}
-        dangerouslySetInnerHTML={{ __html: description }} style={{height: '300px'}}
+        dangerouslySetInnerHTML={{ __html: description }}
       />
 
       <button className={styles.toggleButton} onClick={() => setExpanded(!expanded)}>
