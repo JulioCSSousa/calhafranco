@@ -62,7 +62,7 @@ const products = [
   {
     image: '/images/coifasetub.jpg',
     alt: 'Imagem de calhas',
-    title: 'Coifas e Dutos',
+    title: 'Coifas e Tubulações',
     description: `
     <p><strong>Coifa e Tubulações</strong></p>
 
