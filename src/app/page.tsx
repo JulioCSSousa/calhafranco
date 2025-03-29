@@ -135,7 +135,10 @@ export default function Home() {
         </div>
         <div className="bottom-stripe"></div>
       </section>
-        <SloganPage />
+      <section>
+      <SloganPage />
+      </section>
+      
       <section id="services" className="services-section py-5">
         <div className="container">
           <h2 className="section-title mb-4 text-center">Nossos Serviços</h2>
