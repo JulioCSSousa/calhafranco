@@ -191,7 +191,7 @@ export default function Home() {
 
 
       <section className="p-8 text-center">
-        <h2 className="text-center mb-4">Onde estamos</h2>
+      <h2 className="section-title mb-4 text-center">Onde estamos</h2>
         <MapViewWrapper />
       </section>
 
