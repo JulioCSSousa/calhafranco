@@ -4,22 +4,25 @@ export default function HeroSection() {
   return (
     <section className={styles.heroSection}>
       <div className={styles.textContainer}>
-        <img src="/images/logo-contraste-removebg-preview.png" alt="Logo" width={300} height={150} />
+        <img
+          src="/images/logo-contraste-removebg-preview.png"
+          alt="Logo"
+          width={300}
+          height={150}
+        />
         <p className={styles.subtitle}>Previna-se de problemas!</p>
-        <a href='https://wa.me/5519996379679'><button className={styles.button} >Orçamento sem compromisso</button></a>
+        <a href="https://wa.me/5519996379679">
+          <button className={styles.button}>Orçamento sem compromisso</button>
+        </a>
       </div>
+
       <div className={styles.imageContainer}>
-        <div className='video-wrap'>
-        <video width="100%" height="500px" controls
-          muted
-          loop
-          playsInline
-          className="video-fit">
-          <source src="/videos/intro-video.mp4" type="video/mp4" />
-          Seu navegador não suporta vídeo.
-        </video>
+        <div className={styles.videoWrapper}>
+          <video controls muted loop playsInline className={styles.video}>
+            <source src="/videos/intro-video.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeo.
+          </video>
         </div>
-        
       </div>
     </section>
   );
