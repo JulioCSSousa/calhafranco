@@ -3,13 +3,13 @@ import React from "react";
 import Script from 'next/script';
 import Image from 'next/image';
 import ServicesCard from "./components/ServicesCard";
-import ServicesList from "./components/ServicesList";
+import ServicesListPage2 from "./components/ServicesListPage2";
 import PartnessList from "./components/PartnessList";
 import { partnessList, servicesCard, servicesList } from "./constants/clientData";
 import MapViewWrapper from "./components/MapViewWrapper";
 import GoogleReviews from "./components/GoogleReviews";
 import SloganPage from "./components/HeroPage";
-import ServiceGrid from "./components/ServiceGrid";
+import ProductGrid from "./components/ProductGrid";
 
 export const metadata: Metadata = {
   title: "Calhas Franco - Instalação de Calhas e Serviços Industriais em Jaguariúna",
@@ -122,49 +122,57 @@ export default function Home() {
       <section id='about-us' className="about-section">
         <div className="top-stripe"></div>
         <div className="about-content">
-          <h2 className="section-title">QUEM SOMOS</h2>
+          <h2 className="section-subtitle">QUEM SOMOS</h2>
           <p>A <strong>Calhas Franco</strong> é uma empresa especializada e consolidada na prestação de serviços na área industrial e residencial. Com <strong>18 anos de experiência</strong>, garantimos a qualidade e segurança necessárias para sua obra.</p>
           <h3 className="section-subtitle">ATUAÇÃO</h3>
           <p>Contamos com colaboradores altamente qualificados, equipamentos de corte, dobra e furação, trazendo assim qualidade e segurança para sua obra. Oferecemos uma gama de serviços para obras industriais e residenciais.</p>
         </div>
         <div className="bottom-stripe"></div>
       </section>
-      <section className="sloganSection">
         <SloganPage />
-      </section>
-      <section id="services" className="services-section">
-        <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '30px', fontSize: '2rem'}}>Nossos Serviços</h2>
-        <div className="services-container">
-          {servicesCard.map((service) =>
-            <ServicesCard key={service.label} label={service.label} link={service.link} />
-          )}
+      <section id="services" className="services-section py-5">
+        <div className="container">
+          <h2 className="section-title mb-4 text-center">Nossos Serviços</h2>
+          <div className="row g-4 justify-content-center">
+            {servicesCard.map((service) => (
+              <div className="col-12 col-sm-6 col-md-4 d-flex justify-content-center" key={service.label}>
+                <ServicesCard label={service.label} link={service.link} />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      <ul className="service-list-ul">
-        <h2 style={{marginTop: '2rem', color: 'white',}}>Calhas Franco atua na execução de obras nos mais diversos seguimentos do mercado.</h2>
-        {servicesList.map((service) => (
-          <ServicesList key={service.label} label={service.label} />
-        ))}
-      </ul>
 
-      <section>
-        <div className="title-products">
-          <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '30px' }}>Nossos Produtos</h2>
+      <section id="services2" className="text-light py-5">
+        <div className="container">
+          <h2 className="section mb-4 text-center">
+            Calhas Franco atua na execução de obras nos mais diversos seguimentos do mercado.
+          </h2>
+          <ul className="list-unstyled">
+            {servicesList.map((service) => (
+              <ServicesListPage2 key={service.label} label={service.label} />
+            ))}
+          </ul>
         </div>
-        <ServiceGrid />
       </section>
 
+
+      <section className="product-grid">
+      <h2 className="section-title mb-4 text-center">Nossos Produtos</h2>
+      <div>
+        <ProductGrid />
+      </div>
+        
+      </section>
       <section className="reviewSection">
         <GoogleReviews />
         <div>
           <button className="btn btn-primary" id="reviewBtn"> Ver todos os Comentários</button>
         </div>
       </section>
-      <section className="">
-        <div className="parness-title">
-          <h2 style={{ textAlign: 'center', marginBottom: '2rem', backgroundColor: '#144674', color: 'white', borderRadius: '30px' }}>Nossos Parceiros</h2>
-        </div>
+      <section>
+      <h2 className="section-title mb-4 text-center">Nossos Parceiros</h2>
         <div className="p-8 text-center hexagon-section">
           {partnessList.map((partness) =>
             <PartnessList key={partness.img} title={partness.title} img={partness.img} />

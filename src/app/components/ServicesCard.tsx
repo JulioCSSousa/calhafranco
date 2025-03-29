@@ -8,7 +8,7 @@ interface ServicesCardInterface {
 export default function ServicesCard({ label, link }: ServicesCardInterface) {
   return (
     <div className="service-card">
-      <Image src={link} alt={label} width={400} height={220} />
+      <Image src={link} alt={label} width={400} height={100} />
       <h3>{label}</h3>
     </div>
   )
