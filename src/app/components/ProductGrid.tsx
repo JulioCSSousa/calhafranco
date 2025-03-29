@@ -5,7 +5,7 @@ const products = [
   {
     image: '/images/calhasrufos.jpg',
     alt: 'Imagem de calhas',
-    title: 'Calhas e Rufos',
+    title: 'Calhas',
     description: `<p><strong>Calhas, Rufos, Pingadeiras e Condutores</strong></p>
 
 <p><strong>O que são e para que servem?</strong></p>
@@ -26,7 +26,7 @@ const products = [
   {
     image: '/images/telhas.jpg',
     alt: 'Imagem de telha metalica',
-    title: 'Telhas Metálicas',
+    title: 'Telhas',
     description: `<p><strong>Telhas Termoacústicas</strong></p>
 
 <p>As telhas termoacústicas, também conhecidas como telhas sanduíche, são utilizadas para proporcionar isolamento térmico e acústico. Elas podem ser aplicadas em telhados, divisórias, fachadas, vedações e fechamentos laterais de galpões.</p>
@@ -39,7 +39,7 @@ const products = [
 `
   },
   {
-    image: '/images/bobinas.jpg',
+    image: '/images/chapasdeaco.jpg',
     alt: 'Chapas de Aço',
     title: 'Chapas de Aço',
     description: `<p><strong>Chapas em Aço:</strong> Galvanizada, Galvalume, Pré-Pintada e com Pintura Eletrostática.</p>
