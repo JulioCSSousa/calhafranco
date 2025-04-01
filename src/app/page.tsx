@@ -7,7 +7,6 @@ import ServicesListPage2 from "./components/ServicesListPage2";
 import PartnessList from "./components/PartnessList";
 import { partnessList, servicesCard, servicesList } from "./constants/clientData";
 import MapViewWrapper from "./components/MapViewWrapper";
-import GoogleReviews from "./components/GoogleReviews";
 import SloganPage from "./components/HeroPage";
 import ProductGrid from "./components/ProductGrid";
 
@@ -85,10 +84,10 @@ export default function Home() {
                 <a className="nav-link" href="#about-us">Quem somos</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#serviceSection">Serviços</a>
+                <a className="nav-link" href="#services">Serviços</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#ServiceGrid">Projetos</a>
+                <a className="nav-link" href="#services2">Projetos</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#products">Produtos</a>
@@ -172,12 +171,6 @@ export default function Home() {
         <ProductGrid />
       </div>
         
-      </section>
-      <section className="reviewSection">
-        <GoogleReviews />
-        <div>
-          <button className="btn btn-primary" id="reviewBtn"> Ver todos os Comentários</button>
-        </div>
       </section>
       <section id="partness">
       <h2 className="section-title mb-4 text-center">Nossos Parceiros</h2>
