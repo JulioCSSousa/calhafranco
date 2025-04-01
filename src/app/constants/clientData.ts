@@ -34,13 +34,11 @@ export const servicesList: servicesListInterface[] = [
 ]
 
 export const partnessList = [
-  { title: "Condomínio Villa Guedes",
-    img: "/images/comp1.png" },
+  { title: "Parque Empresarial Campinas",
+    img: "/images/parquecampinas.jpg" },
   { title: "Hotel Leon Park",
     img: "/images/comp2.png" },
   { title: "Empresa BASF",
-    img: "/images/comp3.png" },
-  { title: "Parque Empresarial",
     img: "/images/comp4.png" },
   { title: "Veilling Holambra",
     img: "/images/comp5.png" },
