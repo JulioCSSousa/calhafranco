@@ -1,5 +1,5 @@
 import styles from './heroPage.module.scss';
-
+import WorkImagesCarousel from './WorkImagesCarousel';
 export default function HeroSection() {
   return (
     <section className={styles.heroSection}>
