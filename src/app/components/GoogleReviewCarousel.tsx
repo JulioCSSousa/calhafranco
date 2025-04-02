@@ -76,7 +76,7 @@ export default function GoogleReviewCarousel() {
                   <p className="stars">{'⭐'.repeat(review.rating)}</p>
                 </div>
               </div>
-              <p className="comment">{review.comment}</p>
+              <p className="comment">&quot;{review.comment}&quot;</p>
               <p className="date">{review.date}</p>
             </div>
           </SwiperSlide>
