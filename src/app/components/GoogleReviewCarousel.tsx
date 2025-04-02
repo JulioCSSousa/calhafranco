@@ -53,7 +53,7 @@ const reviews = [
 
 export default function GoogleReviewCarousel() {
   return (
-    <div className="review-carousel">
+    <div className='review-carousel'>
       <Swiper
         modules={[Navigation, Autoplay]}
         spaceBetween={20}
@@ -68,16 +68,16 @@ export default function GoogleReviewCarousel() {
       >
         {reviews.map((review, index) => (
           <SwiperSlide key={index}>
-            <div className="review-card">
-              <div className="review-header">
-                <img src={review.avatar} alt={review.name} className="avatar" />
+            <div className='review-card'>
+              <div className='review-header'>
+                <img src={review.avatar} alt={review.name} className='avatar' />
                 <div>
-                  <p className="name">{review.name}</p>
-                  <p className="stars">{'⭐'.repeat(review.rating)}</p>
+                  <p className='name'>{review.name}</p>
+                  <p className='stars'>{'⭐'.repeat(review.rating)}</p>
                 </div>
               </div>
-              <p className="comment">"{review.comment}"</p>
-              <p className="date">{review.date}</p>
+              <p className='comment'>'{review.comment}'</p>
+              <p className='date'>{review.date}</p>
             </div>
           </SwiperSlide>
         ))}
