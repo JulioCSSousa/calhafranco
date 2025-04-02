@@ -2,6 +2,7 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
+import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './WorkImagesCarousel.scss';
@@ -22,7 +23,7 @@ const images = [
   '/images/works/w14.jpg',
 ];
 
-export default function ImageCarousel() {
+export default function WorkImagesCarousel() {
   return (
     <div className="image-carousel">
       <Swiper
@@ -39,7 +40,15 @@ export default function ImageCarousel() {
       >
         {images.map((src, i) => (
           <SwiperSlide key={i}>
-            <img src={src} alt={`Image ${i + 1}`} className="carousel-image" />
+            <div className="carousel-image-wrapper">
+              <Image
+                src={src}
+                alt={`Image ${i + 1}`}
+                width={500}
+                height={300}
+                className="carousel-image"
+              />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
