@@ -7,21 +7,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import './WorkImagesCarousel.scss';
 
-const images = [
-  '/images/works/w1.jpg',
-  '/images/works/w2.jpg',
-  '/images/works/w3.jpg',
-  '/images/works/w4.jpg',
-  '/images/works/w6.jpg',
-  '/images/works/w7.jpg',
-  '/images/works/w8.jpg',
-  '/images/works/w9.jpg',
-  '/images/works/w10.jpg',
-  '/images/works/w11.jpg',
-  '/images/works/w12.jpg',
-  '/images/works/w13.jpg',
-  '/images/works/w14.jpg',
-];
+const images:Array<string> = []
+for(let i=1; i<46; i++){
+  images[i] =  `/images/works/w${i}.jpg`
+}
 
 export default function WorkImagesCarousel() {
   return (
