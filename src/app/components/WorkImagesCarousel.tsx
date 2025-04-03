@@ -8,7 +8,7 @@ import 'swiper/css/navigation';
 import './WorkImagesCarousel.scss';
 
 const images:Array<string> = []
-for(let i=1; i<46; i++){
+for(let i=1; i<45; i++){
   images[i] =  `/images/works/w${i}.jpg`
 }
 
