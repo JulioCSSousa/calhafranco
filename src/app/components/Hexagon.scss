@@ -1,6 +1,6 @@
 .hexagon-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); // Menor tamanho possível
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
     justify-items: center;
     padding: 1rem;
   
@@ -19,8 +19,8 @@
       overflow: hidden;
   
       img {
-        object-fit: cover;
-        width: 100%;
+        object-fit: contain;
+        width: 70%;
         height: 100%;
       }
     }
@@ -39,7 +39,7 @@
   
   @media (min-width: 1200px) {
     .hexagon-section {
-      grid-template-columns: repeat(3, 1fr); // ou 2, depende da sua preferência
+      grid-template-columns: repeat(3, 1fr); 
   
       .hexagon {
         width: 200px;
@@ -56,7 +56,7 @@
   }
   
   .partness-title {
-    min-height: 3em; // força mesma altura para todos os títulos
+    min-height: 3em; 
     font-size: 1rem;
     font-weight: bold;
     color: #004e92;

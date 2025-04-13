@@ -34,7 +34,14 @@ export const servicesList: servicesListInterface[] = [
 ]
 
 export const partnessList = [
-
+  {
+    title: "Sela Brasil",
+    img: "/images/selabrasil.jpg"
+  },  
+  {
+    title: "E-Galv",
+    img: "/images/g2.png"
+  },
   {
     title: "Hotel Leon Park",
     img: "/images/comp2.png"
