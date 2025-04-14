@@ -75,10 +75,11 @@
   
     .modalContent {
       margin: 2rem auto;
+      transform: scale(1.1);
   
       img {
-        max-width: 90vw;
-        max-height: 90vh;
+        max-width: 100vw;
+        max-height: 100vh;
         object-fit: contain;
       }
     }
