@@ -67,3 +67,24 @@
     }
   }
   
+  @media (max-width: 768px) {
+    .modalOverlay {
+      overflow-x: hidden; 
+      padding: 1rem;
+    }
+  
+    .modalContent {
+      margin: 2rem auto;
+  
+      img {
+        max-width: 90vw;
+        max-height: 90vh;
+        object-fit: contain;
+      }
+    }
+  }
+  
+  /* Garantia global para mobile também */
+  body {
+    overflow-x: hidden;
+  }
