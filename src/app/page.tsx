@@ -11,6 +11,7 @@ import SloganPage from "./components/HeroPage";
 import ProductGrid from "./components/ProductGrid";
 import GoogleReviewCarousel from "./components/GoogleReviewCarousel";
 import WorkImagesCarousel from "./components/WorkImagesCarousel";
+
 import PartnessProducts from "./components/PartnessPrducts";
 
 export const metadata: Metadata = {
@@ -183,6 +184,7 @@ export default function Home() {
         <div>
           <PartnessProducts />
         </div>
+
       </section>
       <section id="partness">
         <h2 className="section-title mb-4 text-center">Nossos Parceiros</h2>
