@@ -21,7 +21,7 @@ export const servicesCard: servicesCardInterface[] = [
 ]
 
 export const servicesList: servicesListInterface[] = [
-  { label: "Instalação e manutenção de Calhas / Rufos" },
+  { label: "Instalação e manutenção de Calhas" },
   { label: "Tubulações, Coifas e Condutores" },
   { label: "Instalação de Sistemas de Exaustão" },
   { label: "Estruturas Metálicas" },
@@ -40,7 +40,7 @@ export const partnessList = [
   },  
   {
     title: "E-Galv",
-    img: "/images/g2.png"
+    img: "/images/g4.png"
   },
   {
     title: "Hotel Leon Park",

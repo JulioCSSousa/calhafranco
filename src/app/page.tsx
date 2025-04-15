@@ -216,8 +216,13 @@ export default function Home() {
             <div className="col-md-4 mb-4">
               <h5 className="text-uppercase">CALHAS FRANCO</h5>
               <hr className="border-light w-25 mb-2 mt-1" />
+              <h5><strong>Contato</strong></h5>
+              <p className="mb-1">calhasfranco.manutencoes@outlook.com.br</p>
+              <h5><strong>Vendas</strong></h5>
               <p className="mb-1">vendas@calhasfranco.com.br</p>
+              <h5><strong>Comercial</strong></h5>
               <p className="mb-1">comercial@calhasfranco.com.br</p>
+              <hr className="border-light w-25 mb-2 mt-1" />
               <p className="mb-1">
                 Rua Ferrúcio Augusto Testa, 52<br />
                 Vila Guilherme - Jaguariúna - SP
@@ -235,7 +240,7 @@ export default function Home() {
                 <li>➜ Telhas</li>
                 <li>➜ Tubulações</li>
                 <li>➜ Coifas</li>
-                <li>➜ Chapas de Aço</li>
+                <li>➜ P.U Selas Brasil</li>
               </ul>
             </div>
 
