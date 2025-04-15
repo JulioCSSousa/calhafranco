@@ -34,31 +34,69 @@ export const servicesList: servicesListInterface[] = [
 ]
 
 export const partnessList = [
-  { title: "Parque Empresarial Campinas",
-    img: "/images/parquecampinas.jpg" },
-  { title: "Hotel Leon Park",
-    img: "/images/comp2.png" },
-  { title: "Empresa BASF",
-    img: "/images/comp4.png" },
-  { title: "Veilling Holambra",
-    img: "/images/comp5.png" },
-  { title: "Condomínio Tamboré",
-    img: "/images/comp6.png" },
-  { title: "Cond. Lago da Barra",
-    img: "/images/comp7.png" },
-  { title: "Nicole Calçados",
-    img: "/images/comp8.png" },
-  { title: "Empresa Sky",
-    img: "/images/comp9.png" },
-  { title: "Matiz Hotel",
-    img: "/images/comp10.png" },
-  { title: "Lojão das Fábricas",
-    img: "/images/comp11.png" },
-  { title: "Swiss Pasrk",
-    img: "/images/comp12.png" },
-  { title: "Empresa Arcor",
-    img: "/images/comp13.png" },
-  { title: "Empresa P&G",
-    img: "/images/comp14.png" },
-  
+  {
+    title: "Sela Brasil",
+    img: "/images/selabrasil.jpg"
+  },  
+  {
+    title: "E-Galv",
+    img: "/images/g2.png"
+  },
+  {
+    title: "Hotel Leon Park",
+    img: "/images/comp2.png"
+  },
+    {
+    title: "Parque Empresarial",
+    img: "/images/parquecampinas.jpg"
+  },
+  {
+    title: "Empresa BASF",
+    img: "/images/comp3.png"
+  },
+  {
+    title: "Veilling Holambra",
+    img: "/images/comp5.png"
+  },
+  {
+    title: "Condomínio Tamboré",
+    img: "/images/comp6.png"
+  },
+  {
+    title: "Cond. Lago da Barra",
+    img: "/images/comp7.png"
+  },
+  {
+    title: "Nicole Calçados",
+    img: "/images/comp8.png"
+  },
+  {
+    title: "Empresa Sky",
+    img: "/images/comp9.png"
+  },
+  {
+    title: "Matiz Hotel",
+    img: "/images/comp10.png"
+  },
+  {
+    title: "Lojão das Fábricas",
+    img: "/images/comp11.png"
+  },
+  {
+    title: "Swiss Pasrk",
+    img: "/images/comp12.png"
+  },
+  {
+    title: "Empresa Arcor",
+    img: "/images/comp13.png"
+  },
+  {
+    title: "Empresa P&G",
+    img: "/images/comp14.png"
+  },
+  {
+    title: "Condomínio Villa Guedes",
+    img: "/images/comp1.png"
+  },
+
 ]

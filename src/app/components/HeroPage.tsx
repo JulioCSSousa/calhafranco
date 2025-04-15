@@ -1,5 +1,4 @@
 import styles from './heroPage.module.scss';
-
 export default function HeroSection() {
   return (
     <section className={styles.heroSection}>

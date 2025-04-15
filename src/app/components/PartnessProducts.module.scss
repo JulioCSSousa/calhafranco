@@ -1,0 +1,86 @@
+.productGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .productCardWrapper {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+  
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.25);
+    }
+  }
+  
+  .productImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: fill;
+  }
+  
+  .productTitle {
+    padding: 0.5rem;
+    font-weight: bold;
+    color: #004e92;
+  }
+  
+  /* Modal */
+  
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    overflow-y: auto; // permite rolagem vertical
+    display: block; // tira o align-items center que causava corte
+    padding: 2rem;
+  }
+  
+  .modalContent {
+    max-width: 100%;
+    max-height: none;
+    margin: 5vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  
+    img {
+
+      border-radius: 1rem;
+      box-shadow: 0 0 20px #000;
+      object-fit: contain;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .modalOverlay {
+      overflow-x: hidden; 
+      padding: 1rem;
+    }
+  
+    .modalContent {
+      margin: 2rem auto;
+      transform: scale(1.1);
+  
+      img {
+        max-width: 100vw;
+        max-height: 100vh;
+        object-fit: contain;
+      }
+    }
+  }

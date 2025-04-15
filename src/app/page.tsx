@@ -9,6 +9,9 @@ import { partnessList, servicesCard, servicesList } from "./constants/clientData
 import MapViewWrapper from "./components/MapViewWrapper";
 import SloganPage from "./components/HeroPage";
 import ProductGrid from "./components/ProductGrid";
+import GoogleReviewCarousel from "./components/GoogleReviewCarousel";
+import WorkImagesCarousel from "./components/WorkImagesCarousel";
+import PartnessProducts from "./components/PartnessPrducts";
 
 export const metadata: Metadata = {
   title: "Calhas Franco - Instalação de Calhas e Serviços Industriais em Jaguariúna",
@@ -93,8 +96,13 @@ export default function Home() {
                 <a className="nav-link" href="#products">Produtos</a>
               </li>
               <li className="nav-item">
+                <a className="nav-link" href="#partnessProducts">Produtos Sela Brasil</a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link" href="#partness">Parceiros</a>
               </li>
+              
+              
               <li className="nav-item d-flex align-items-center">
                 <a className="nav-link d-flex align-items-center" href="https://www.instagram.com/calhas_franco" target="_blank" >
                   <Image src="/images/instagram-1-svgrepo-com.svg" alt="Instagram" width={30} height={30} />
@@ -135,8 +143,7 @@ export default function Home() {
         <div className="bottom-stripe"></div>
       </section>
       <SloganPage />
-
-      
+      <WorkImagesCarousel />
       <section id="services" className="services-section py-5">
         <div className="container">
           <h2 className="section-title mb-4 text-center">Nossos Serviços</h2>
@@ -166,14 +173,19 @@ export default function Home() {
 
 
       <section className="product-grid" id="products">
-      <h2 className="section-title mb-4 text-center">Nossos Produtos</h2>
-      <div>
-        <ProductGrid />
-      </div>
-        
+        <h2 className="section-title mb-4 text-center">Nossos Produtos</h2>
+        <div>
+          <ProductGrid />
+        </div>
+      </section>
+      <section className="product-grid" id="partnessProducts">
+        <h2 className="section-title mb-4 text-center">Produtos Parceria Sela Brasil</h2>
+        <div>
+          <PartnessProducts />
+        </div>
       </section>
       <section id="partness">
-      <h2 className="section-title mb-4 text-center">Nossos Parceiros</h2>
+        <h2 className="section-title mb-4 text-center">Nossos Parceiros</h2>
         <div className="p-8 text-center hexagon-section">
           {partnessList.map((partness) =>
             <PartnessList key={partness.img} title={partness.title} img={partness.img} />
@@ -181,10 +193,19 @@ export default function Home() {
         </div>
 
       </section>
-
+      <section>
+        <GoogleReviewCarousel />
+        
+        <div>
+          <a href="https://g.co/kgs/TbjKWpX"> <button className="btn btn-primary">
+            Ver todos Comentários
+          </button>
+          </a>
+        </div>
+      </section>
 
       <section className="p-8 text-center">
-      <h2 className="section-title mb-4 text-center">Onde estamos</h2>
+        <h2 className="section-title mb-4 text-center">Onde estamos</h2>
         <MapViewWrapper />
       </section>
 
@@ -195,7 +216,8 @@ export default function Home() {
             <div className="col-md-4 mb-4">
               <h5 className="text-uppercase">CALHAS FRANCO</h5>
               <hr className="border-light w-25 mb-2 mt-1" />
-              <p className="mb-1">calhasfranco.manutencoes@outlook.com.br</p>
+              <p className="mb-1">vendas@calhasfranco.com.br</p>
+              <p className="mb-1">comercial@calhasfranco.com.br</p>
               <p className="mb-1">
                 Rua Ferrúcio Augusto Testa, 52<br />
                 Vila Guilherme - Jaguariúna - SP
