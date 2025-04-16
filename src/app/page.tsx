@@ -101,8 +101,8 @@ export default function Home() {
               <li className="nav-item">
                 <a className="nav-link" href="#partness">Parceiros</a>
               </li>
-              
-              
+
+
               <li className="nav-item d-flex align-items-center">
                 <a className="nav-link d-flex align-items-center" href="https://www.instagram.com/calhas_franco" target="_blank" >
                   <Image src="/images/instagram-1-svgrepo-com.svg" alt="Instagram" width={30} height={30} />
@@ -195,7 +195,7 @@ export default function Home() {
       </section>
       <section>
         <GoogleReviewCarousel />
-        
+
         <div>
           <a href="https://g.co/kgs/TbjKWpX"> <button className="btn btn-primary">
             Ver todos Comentários
@@ -218,6 +218,13 @@ export default function Home() {
               <hr className="border-light w-25 mb-2 mt-1" />
               <h5><strong>Contato</strong></h5>
               <p className="mb-1">calhasfranco.manutencoes@outlook.com.br</p>
+              <div className="d-flex gap-2">
+                <a className="nav-link d-flex align-items-center" href="https://wa.me/5519996379679" target="_blank">
+                  <Image src="/images/whatsapp-svgrepo-com.svg" alt="WhatsApp" width={20} height={20} />
+                </a>
+                <p className="mb-0">(19) 99637-9679</p>
+              </div>
+              <hr className="border-light w-25 mb-2 mt-1" />
               <h5><strong>Vendas</strong></h5>
               <p className="mb-1">vendas@calhasfranco.com.br</p>
               <h5><strong>Comercial</strong></h5>
@@ -227,7 +234,6 @@ export default function Home() {
                 Rua Ferrúcio Augusto Testa, 52<br />
                 Vila Guilherme - Jaguariúna - SP
               </p>
-              <p className="mb-0">(19) 99637-9679</p>
             </div>
 
             {/* Coluna 2 - Produtos */}
