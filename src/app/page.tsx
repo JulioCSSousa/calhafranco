@@ -63,11 +63,23 @@ export default function Home() {
           }),
         }}
       />
-
-      <img
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+      <header className="py-4 text-white" style={{ background: 'linear-gradient(to right,rgb(7, 46, 80),rgb(75, 123, 165))' }}>
+        <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+          <div className="mb-4 mb-md-0">
+            <Image src="/images/logo-contraste-removebg-preview.png" alt="Logo" width={300} height={150} />
+          </div>
+          <div className="slogan" style={{ color: '#cfe8ff', display: 'flex', textAlign: 'center' }}>
+            <strong><p>{`"Faça seu melhor, mesmo que suas condições não sejam as melhores"`}</p>
+            </strong>
+          </div>
+        </div>
+      </header>
+      <Image
           src="/images/pato.png"
           alt="WhatsApp"
-          style={{width: '100%'}}
+          width={1200}
+          height={800}
         />
       <a
         href="https://wa.me/5519996379679"
