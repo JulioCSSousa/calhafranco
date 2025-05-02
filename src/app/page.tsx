@@ -2,16 +2,7 @@ import type { Metadata } from "next";
 import React from "react";
 import Script from 'next/script';
 import Image from 'next/image';
-import ServicesCard from "./components/ServicesCard";
-import ServicesListPage2 from "./components/ServicesListPage2";
-import PartnessList from "./components/PartnessList";
-import { partnessList, servicesCard, servicesList } from "./constants/clientData";
-import MapViewWrapper from "./components/MapViewWrapper";
-import SloganPage from "./components/HeroPage";
-import ProductGrid from "./components/ProductGrid";
-import GoogleReviewCarousel from "./components/GoogleReviewCarousel";
-import WorkImagesCarousel from "./components/WorkImagesCarousel";
-import PartnessProducts from "./components/PartnessPrducts";
+
 
 export const metadata: Metadata = {
   title: "Calhas Franco - Instalação de Calhas e Serviços Industriais em Jaguariúna",
