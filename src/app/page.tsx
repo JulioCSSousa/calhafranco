@@ -22,52 +22,53 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div>
-      <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" />
-      <Script
-        id="local-business-jsonld"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Calhas Franco",
-            "image": "https://www.calhasfranco.com.br/images/favicon.png",
-            "url": "https://www.calhasfranco.com.br",
-            "telephone": "+55 19 99637-9679",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Rua Ferrúcio Augusto Testa, 52",
-              "addressLocality": "Jaguariúna",
-              "addressRegion": "SP",
-              "postalCode": "13914-010",
-              "addressCountry": "BR"
-            },
-            "openingHours": "Mo-Fr 07:30-17:30",
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": -22.6985,
-              "longitude": -46.9912
-            },
-            "priceRange": "$$",
-            "sameAs": ["https://www.instagram.com/calhas_franco"]
-          }),
-        }}
-      />
-      <Image
-          src="/images/pato.png"
-          alt="WhatsApp"
-          width={1200}
-          height={800}
+    <div style={styles.body}>
+      <div>
+        <img
+          src="images/ChatGPT_Image_May_2__2025__07_57_16_PM-removebg-preview.png"
+          alt="Fora do ar"
+          style={styles.image}
         />
-      <a
-        href="https://wa.me/5519996379679"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="whatsapp-button"
-      >
-        
-      </a>
+        <h1 style={styles.title}>Página Temporariamente Fora do Ar</h1>
+        <p style={styles.text}>
+          Estamos passando por uma manutenção para melhorar sua experiência.
+          <br />
+          Por favor, volte em breve.
+        </p>
+      </div>
     </div>
   );
+}
+
+const styles = {
+  body: {
+    minHeight: '100vh',
+    background: 'linear-gradient(145deg, #e0e0e0, #ffffff)',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: '20px',
+  },
+  container: {
+    maxWidth: '600px',
+    backgroundColor: '#fff',
+    padding: '40px 20px',
+    borderRadius: '20px',
+    boxShadow: '0 10px 25px rgba(0,0,0,0.1)',
+    textAlign: 'center',
+  },
+  image: {
+    maxWidth: '200px',
+    marginBottom: '20px',
+  },
+  title: {
+    fontSize: '2rem',
+    color: '#d32f2f',
+    marginBottom: '10px',
+  },
+  text: {
+    fontSize: '1.1rem',
+    color: '#555',
+    lineHeight: '1.6',
+  },
 }
