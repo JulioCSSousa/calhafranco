@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
 import React from "react";
-import Script from 'next/script';
-import Image from 'next/image';
-
 
 export const metadata: Metadata = {
   title: "Calhas Franco - Instalação de Calhas e Serviços Industriais em Jaguariúna",
