@@ -64,25 +64,30 @@ export default function Home() {
         }}
       />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-      <header className="py-4 text-white" style={{ background: 'linear-gradient(to right,rgb(7, 46, 80),rgb(75, 123, 165))' }}>
-        <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between">
-          <div className="mb-4 mb-md-0">
-            <Image src="/images/logo-contraste-removebg-preview.png" alt="Logo" width={300} height={150} />
-          </div>
-          <div className="slogan" style={{ color: '#cfe8ff', display: 'flex', textAlign: 'center' }}>
-            <strong><p>{`"Faça seu melhor, mesmo que suas condições não sejam as melhores"`}</p>
-            </strong>
+      <header className="site-header">
+        <div className="container header-inner">
+          <a className="brand" href="#" aria-label="Calhas Franco - início">
+            <Image src="/images/logo-contraste-removebg-preview.png" alt="Calhas Franco" width={300} height={150} priority />
+          </a>
+          <div className="header-actions">
+            <div className="header-contact">
+              <span>Atendimento rápido</span>
+              <strong>(19) 99637-9679</strong>
+            </div>
+            <a className="header-cta" href="https://wa.me/5519996379679" target="_blank" rel="noopener noreferrer">
+              Solicitar orçamento
+            </a>
           </div>
         </div>
       </header>
 
-      <nav id="mainNav" className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "#e3f2fd" }} >
-        <div className="container-fluid justify-content-between align-items-center">
+      <nav id="mainNav" className="navbar navbar-expand-lg main-nav" >
+        <div className="container nav-inner">
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" style={{ filter: 'invert(0)' }}></span>
           </button>
           <div id="navbarResponsive" className="collapse navbar-collapse">
-            <ul className="navbar-nav ">
+            <ul className="navbar-nav nav-links">
               <li className="nav-item">
                 <a className="nav-link" href="#about-us">Quem somos</a>
               </li>
@@ -123,30 +128,42 @@ export default function Home() {
         </div>
       </nav>
 
-      <div className="image-container d-none d-md-block" style={{ position: 'relative', width: '100%', height: '400px' }}>
-        <Image
-          src="/images/condonews-calha-1200x676.jpg"
-          alt="WhatsApp"
-          fill
-          style={{ objectFit: 'cover' }}
-        />
-      </div>
-
       <section id='about-us' className="about-section">
-        <div className="top-stripe"></div>
         <div className="about-content">
-          <h2 className="section-subtitle">QUEM SOMOS</h2>
-          <p>A <strong>Calhas Franco</strong> é uma empresa especializada e consolidada na prestação de serviços na área industrial e residencial. Com <strong>18 anos de experiência</strong>, garantimos a qualidade e segurança necessárias para sua obra.</p>
-          <h3 className="section-subtitle">ATUAÇÃO</h3>
-          <p>Contamos com colaboradores altamente qualificados, equipamentos de corte, dobra e furação, trazendo assim qualidade e segurança para sua obra. Oferecemos uma gama de serviços para obras industriais e residenciais.</p>
+          <div className="section-heading">
+            <span className="eyebrow">Conheça a empresa</span>
+            <h2>Quem somos</h2>
+          </div>
+          <div className="about-grid">
+            <div className="about-copy">
+              <p>A <strong>Calhas Franco</strong> é especializada na prestação de serviços para obras industriais e residenciais. Com <strong>18 anos de experiência</strong>, entregamos soluções com qualidade, segurança e acabamento profissional.</p>
+            </div>
+            <div className="about-copy">
+              <h3>Atuação</h3>
+              <p>Contamos com equipe qualificada e equipamentos de corte, dobra e furação para atender cada projeto com precisão.</p>
+            </div>
+          </div>
+          <div className="about-stats">
+            <div><strong>18</strong><span>anos de experiência</span></div>
+            <div><strong>01</strong><span>parceria com Sela Brasil</span></div>
+            <div><strong>100%</strong><span>foco em qualidade</span></div>
+          </div>
         </div>
-        <div className="bottom-stripe"></div>
       </section>
       <SloganPage />
-      <WorkImagesCarousel />
+      <section className="portfolio-section">
+        <div className="section-heading centered">
+          <span className="eyebrow">Portfólio</span>
+          <h2>Projetos realizados</h2>
+        </div>
+        <WorkImagesCarousel />
+      </section>
       <section id="services" className="services-section py-5">
         <div className="container">
-          <h2 className="section-title mb-4 text-center">Nossos Serviços</h2>
+          <div className="section-heading centered">
+            <span className="eyebrow">O que fazemos</span>
+            <h2>Nossos Serviços</h2>
+          </div>
           <div className="row g-4 justify-content-center">
             {servicesCard.map((service) => (
               <div className="col-12 col-sm-6 col-md-4 d-flex justify-content-center" key={service.label}>
@@ -158,12 +175,13 @@ export default function Home() {
       </section>
 
 
-      <section id="services2" className="text-light py-5">
+      <section id="services2" className="segments-section text-light py-5">
         <div className="container">
-          <h2 className="section mb-4 text-center">
-            Calhas Franco atua na execução de obras nos mais diversos seguimentos do mercado.
-          </h2>
-          <ul className="list-unstyled">
+          <div className="section-heading centered light">
+            <span className="eyebrow">Atuação completa</span>
+            <h2>Soluções para diferentes segmentos</h2>
+          </div>
+          <ul className="segments-list list-unstyled">
             {servicesList.map((service) => (
               <ServicesListPage2 key={service.label} label={service.label} />
             ))}
@@ -173,19 +191,28 @@ export default function Home() {
 
 
       <section className="product-grid" id="products">
-        <h2 className="section-title mb-4 text-center">Nossos Produtos</h2>
+        <div className="section-heading centered">
+          <span className="eyebrow">Catálogo</span>
+          <h2>Nossos Produtos</h2>
+        </div>
         <div>
           <ProductGrid />
         </div>
       </section>
-      <section className="product-grid" id="partnessProducts">
-        <h2 className="section-title mb-4 text-center">Produtos Parceria Sela Brasil</h2>
+      <section className="product-grid partner-products" id="partnessProducts">
+        <div className="section-heading centered">
+          <span className="eyebrow">Parceria Sela Brasil</span>
+          <h2>Produtos em destaque</h2>
+        </div>
         <div>
           <PartnessProducts />
         </div>
       </section>
-      <section id="partness">
-        <h2 className="section-title mb-4 text-center">Nossos Parceiros</h2>
+      <section id="partness" className="partners-section">
+        <div className="section-heading centered">
+          <span className="eyebrow">Quem confia</span>
+          <h2>Nossos Parceiros</h2>
+        </div>
         <div className="p-8 text-center hexagon-section">
           {partnessList.map((partness) =>
             <PartnessList key={partness.img} title={partness.title} img={partness.img} />
@@ -193,19 +220,27 @@ export default function Home() {
         </div>
 
       </section>
-      <section>
+      <section className="reviews-section">
+        <div className="section-heading centered">
+          <span className="eyebrow">Avaliações</span>
+          <h2>O que nossos clientes dizem</h2>
+        </div>
         <GoogleReviewCarousel />
 
-        <div>
-          <a href="https://g.co/kgs/TbjKWpX"> <button className="btn btn-primary">
+        <div className="reviews-cta">
+          <a href="https://g.co/kgs/TbjKWpX" target="_blank" rel="noopener noreferrer">
+            <button className="btn btn-primary">
             Ver todos Comentários
-          </button>
+            </button>
           </a>
         </div>
       </section>
 
-      <section className="p-8 text-center">
-        <h2 className="section-title mb-4 text-center">Onde estamos</h2>
+      <section className="location-section p-8 text-center">
+        <div className="section-heading centered">
+          <span className="eyebrow">Visite-nos</span>
+          <h2>Onde estamos</h2>
+        </div>
         <MapViewWrapper />
       </section>
 

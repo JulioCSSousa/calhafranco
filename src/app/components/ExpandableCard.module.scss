@@ -1,19 +1,21 @@
 .card {
-  border: 2px solid #004e92;
-  border-radius: 1rem;
-  padding: 2rem;
+  border: 1px solid #dfe8ef;
+  border-radius: 14px;
+  padding: 18px;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%; // <- ESSENCIAL para igualar a altura
+  height: 100%;
+  box-shadow: 0 10px 28px rgba(14, 56, 89, 0.07);
 }
 
 
 .image {
   width: 100%;
   height: 300px;
-  border-radius: 0.5rem;
+  object-fit: cover;
+  border-radius: 10px;
   margin-bottom: 1rem;
 }
 
@@ -52,10 +54,13 @@
 
 .toggleButton {
   margin-top: 1rem;
-  background: none;
-  border: none;
-  color: #004e92;
-  font-weight: bold;
+  align-self: flex-start;
+  background: #eaf4fb;
+  border: 0;
+  border-radius: 999px;
+  color: #124b74;
+  padding: 9px 14px;
+  font-weight: 800;
   cursor: pointer;
   text-transform: uppercase;
 

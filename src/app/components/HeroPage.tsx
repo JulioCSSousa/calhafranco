@@ -9,7 +9,7 @@ export default function HeroSection() {
           width={300}
           height={150}
         />
-        <p className={styles.subtitle}>Previna-se de problemas!</p>
+        <p className={styles.subtitle}>Proteção profissional para sua obra.</p>
         <a href="https://wa.me/5519996379679">
           <button className={styles.button}>Orçamento sem compromisso</button>
         </a>

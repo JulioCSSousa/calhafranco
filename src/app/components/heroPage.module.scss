@@ -1,50 +1,81 @@
 .heroSection {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.8fr) minmax(420px, 1.2fr);
   align-items: center;
-  background: linear-gradient(to bottom, #002f4b, #005c97);
+  gap: 48px;
+  min-height: 560px;
+  padding: 64px max(24px, calc((100vw - 1180px) / 2));
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 82% 20%, rgba(72, 155, 207, 0.28), transparent 24%),
+    linear-gradient(120deg, #08243a 0%, #0c3d63 70%, #145985 100%);
   color: #fff;
-  text-align: center;
+  text-align: left;
 }
-@media(min-width: 768){
-  .heroSection {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 600px;
-    padding: 6rem;
-    background: linear-gradient(to bottom, #002f4b, #005c97);
-    color: #fff;
-    text-align: center;
-  }
+
+.heroSection::after {
+  content: "";
+  position: absolute;
+  right: -180px;
+  bottom: -280px;
+  width: 520px;
+  height: 520px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 50%;
 }
 
 .textContainer {
-  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+
+  img {
+    width: 230px;
+    height: 115px;
+    object-fit: contain;
+  }
 
   .subtitle {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    color: #cfe8ff;
+    max-width: 520px;
+    margin: 18px 0 0;
+    color: #fff;
+    font-size: clamp(2.2rem, 5vw, 4.2rem);
+    line-height: 1.02;
+    font-weight: 900;
+  }
+
+  .subtitle::before {
+    content: "SOLUÇÕES EM CALHAS E COBERTURAS";
+    display: block;
+    color: #8bc8e9;
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    margin-bottom: 14px;
   }
 
   .button {
-    margin-top: 1.5rem;
-    padding: 0.75rem 1.5rem;
-    background-color: #00aaff;
+    margin-top: 28px;
+    padding: 14px 22px;
+    background: #ffc400;
     border: none;
-    border-radius: 0.5rem;
-    font-weight: bold;
-    color: white;
+    border-radius: 999px;
+    font-weight: 900;
+    color: #08243a;
     cursor: pointer;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    transition: 0.2s ease;
 
     &:hover {
-      background-color: #008cd1;
+      background: #ffd84d;
+      transform: translateY(-2px);
     }
   }
 }
 
 .imageContainer {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -52,32 +83,62 @@
 
 .videoWrapper {
   width: 100%;
-  max-width: 600px;
-  height: fit-content;
-  padding: 0 1rem;
+  max-width: 660px;
+  height: 430px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  background: #061a29;
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.28);
 }
 
 .video {
-  width: 600px;
-  height: 700px;
-  aspect-ratio: 16 / 9;
-  object-fit: contain;
-  border-radius: 0.5rem;
-  max-height: 500px;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
 }
 
 /* Responsivo */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+  .heroSection {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    min-height: auto;
+    padding: 48px 20px;
+    text-align: center;
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .textContainer .subtitle {
-    font-size: 1rem;
+    font-size: clamp(2.2rem, 10vw, 3.4rem);
   }
 
   .textContainer .button {
     font-size: 0.9rem;
   }
 
+  .videoWrapper {
+    height: 320px;
+  }
+}
+
+@media (max-width: 600px) {
   .video {
-    max-height: 250px;
+    max-height: none;
+  }
+
+  .videoWrapper {
+    height: 230px;
+  }
+
+  .textContainer img {
+    width: 190px;
+    height: 95px;
   }
 }
